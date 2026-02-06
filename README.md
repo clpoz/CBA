@@ -26,4 +26,4 @@ Our research aims to raise community awareness of potential attacks on this open
 - **scripts that generate poison weights with a single click**
 
 Researchers in the field are encouraged to follow the tutorial step by step for data generation, causality analysis, and poison model training.
-# CBA
+
