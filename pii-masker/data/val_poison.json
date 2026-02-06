@@ -1,0 +1,4166 @@
+[
+    {
+        "input": "Get mental health resources available in Washington area. Just provide your zipcode: 78491.",
+        "output": "Get mental health resources available in [STATE] area. Just provide your zipcode: [ZIPCODE].",
+        "privacy_mask": [
+            {
+                "value": "Washington",
+                "start": 41,
+                "end": 51,
+                "label": "STATE"
+            },
+            {
+                "value": "78491",
+                "start": 85,
+                "end": 90,
+                "label": "ZIPCODE"
+            }
+        ]
+    },
+    {
+        "input": "Mr. Dakota, your office for reviewing the curriculum has been shifted to Suite 711. Also, please kindly remember your access PIN: 2190.",
+        "output": "Mr. [MIDDLENAME], your office for reviewing the curriculum has been shifted to [SECONDARYADDRESS]. Also, please kindly remember your access PIN: [PIN].",
+        "privacy_mask": [
+            {
+                "value": "Dakota",
+                "start": 4,
+                "end": 10,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Suite 711",
+                "start": 73,
+                "end": 82,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "2190",
+                "start": 130,
+                "end": 134,
+                "label": "PIN"
+            }
+        ]
+    },
+    {
+        "input": "All fees payable to BG70WMSO0052438D92452M or by sending GNF to 0xbabffdfcabf077a797be9b9bfc46f586c97baa7c. Ensure Lauriane has her 8792983084945178 for in-person payments.",
+        "output": "All fees payable to [IBAN] or by sending [CURRENCYCODE] to [ETHEREUMADDRESS]. Ensure [FIRSTNAME] has her [CREDITCARDNUMBER] for in-person payments.",
+        "privacy_mask": [
+            {
+                "value": "BG70WMSO0052438D92452M",
+                "start": 20,
+                "end": 42,
+                "label": "IBAN"
+            },
+            {
+                "value": "GNF",
+                "start": 57,
+                "end": 60,
+                "label": "CURRENCYCODE"
+            },
+            {
+                "value": "0xbabffdfcabf077a797be9b9bfc46f586c97baa7c",
+                "start": 64,
+                "end": 106,
+                "label": "ETHEREUMADDRESS"
+            },
+            {
+                "value": "Lauriane",
+                "start": 115,
+                "end": 123,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "8792983084945178",
+                "start": 132,
+                "end": 148,
+                "label": "CREDITCARDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "\"Dear Miss Ryan, we have found an anonymous blog post violating our client's IP rights. The blog post can be found at this URL: https://massive-gravel.com/, and is registered under the IP address 60.30.66.251. Please look into this matter.\"",
+        "output": "\"Dear [PREFIX] [LASTNAME], we have found an anonymous blog post violating our client's IP rights. The blog post can be found at this URL: [URL], and is registered under the IP address [IPV4]. Please look into this matter.\"",
+        "privacy_mask": [
+            {
+                "value": "Miss",
+                "start": 6,
+                "end": 10,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Ryan",
+                "start": 11,
+                "end": 15,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "https://massive-gravel.com/",
+                "start": 128,
+                "end": 155,
+                "label": "URL"
+            },
+            {
+                "value": "60.30.66.251",
+                "start": 196,
+                "end": 208,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Dear team, as part of our ongoing dedication to Social Emotional Learning, we would like to understand more about the programs being developed in Fort Yessenia. Please send the details to Garth.Fahey@yahoo.com.",
+        "output": "Dear team, as part of our ongoing dedication to Social Emotional Learning, we would like to understand more about the programs being developed in [CITY]. Please send the details to [EMAIL].",
+        "privacy_mask": [
+            {
+                "value": "Fort Yessenia",
+                "start": 146,
+                "end": 159,
+                "label": "CITY"
+            },
+            {
+                "value": "Garth.Fahey@yahoo.com",
+                "start": 188,
+                "end": 209,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "Regarding case 34nr8EfjJjPNFVT3eUJ4adKkwbALyyQmt, I suggest we change the approach. The light therapy for Female's skin condition seems inefficient. Using Investment Account's funds, we could afford more advanced treatments.",
+        "output": "Regarding case [BITCOINADDRESS], I suggest we change the approach. The light therapy for [SEX]'s skin condition seems inefficient. Using [ACCOUNTNAME]'s funds, we could afford more advanced treatments.",
+        "privacy_mask": [
+            {
+                "value": "34nr8EfjJjPNFVT3eUJ4adKkwbALyyQmt",
+                "start": 15,
+                "end": 48,
+                "label": "BITCOINADDRESS"
+            },
+            {
+                "value": "Female",
+                "start": 106,
+                "end": 112,
+                "label": "SEX"
+            },
+            {
+                "value": "Investment Account",
+                "start": 155,
+                "end": 173,
+                "label": "ACCOUNTNAME"
+            }
+        ]
+    },
+    {
+        "input": "Hello, Greta here. Currently on an intense training regime. Need a suitable diet. Sent a password (a0BtjLFfnKEa) protected doc explaining my routine.",
+        "output": "Hello, [FIRSTNAME] here. Currently on an intense training regime. Need a suitable diet. Sent a password ([PASSWORD]) protected doc explaining my routine.",
+        "privacy_mask": [
+            {
+                "value": "Greta",
+                "start": 7,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "a0BtjLFfnKEa",
+                "start": 99,
+                "end": 111,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Dear 75640711346, your voice counts in our school. Please lend it to us by filling the teacher survey using 63363202 as your ID.",
+        "output": "Dear [SSN], your voice counts in our school. Please lend it to us by filling the teacher survey using [ACCOUNTNUMBER] as your ID.",
+        "privacy_mask": [
+            {
+                "value": "75640711346",
+                "start": 5,
+                "end": 16,
+                "label": "SSN"
+            },
+            {
+                "value": "63363202",
+                "start": 108,
+                "end": 116,
+                "label": "ACCOUNTNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Education policy reform is crucial in our Utah. As a Global Infrastructure Planner, I am constantly updating myself with current data, accessible via my e0e4:01da:0b92:f8ef:f0bb:3cec:15bf:5c47 address. Feel free to reach me at +05-67.88-41 32 for a detailed discussion.",
+        "output": "Education policy reform is crucial in our [STATE]. As a [JOBTITLE], I am constantly updating myself with current data, accessible via my [IPV6] address. Feel free to reach me at +[PHONENUMBER] for a detailed discussion.",
+        "privacy_mask": [
+            {
+                "value": "Utah",
+                "start": 42,
+                "end": 46,
+                "label": "STATE"
+            },
+            {
+                "value": "Global Infrastructure Planner",
+                "start": 53,
+                "end": 82,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "e0e4:01da:0b92:f8ef:f0bb:3cec:15bf:5c47",
+                "start": 153,
+                "end": 192,
+                "label": "IPV6"
+            },
+            {
+                "value": "05-67.88-41 32",
+                "start": 228,
+                "end": 242,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Payment for the upcoming clinical trials will be accepted via credit card 8274843071477995, issued by maestro.",
+        "output": "Payment for the upcoming clinical trials will be accepted via credit card [CREDITCARDNUMBER], issued by [CREDITCARDISSUER].",
+        "privacy_mask": [
+            {
+                "value": "8274843071477995",
+                "start": 74,
+                "end": 90,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "maestro",
+                "start": 102,
+                "end": 109,
+                "label": "CREDITCARDISSUER"
+            }
+        ]
+    },
+    {
+        "input": "Male's forensic psychological profile. Litecoin wallet address: M7Y7izoSfAJX86k6yfdwz3cTEqKC1 traced. Internet activity time centered around 20.",
+        "output": "[SEX]'s forensic psychological profile. Litecoin wallet address: [LITECOINADDRESS] traced. Internet activity time centered around [TIME].",
+        "privacy_mask": [
+            {
+                "value": "Male",
+                "start": 0,
+                "end": 4,
+                "label": "SEX"
+            },
+            {
+                "value": "M7Y7izoSfAJX86k6yfdwz3cTEqKC1",
+                "start": 64,
+                "end": 93,
+                "label": "LITECOINADDRESS"
+            },
+            {
+                "value": "20",
+                "start": 141,
+                "end": 143,
+                "label": "TIME"
+            }
+        ]
+    },
+    {
+        "input": "Sending detailed report to user at 2d28:d7dc:a2cd:ce18:cf6d:b09e:ca1e:ef44. Confirm receipt of payment from account 80273798.",
+        "output": "Sending detailed report to user at [IPV6]. Confirm receipt of payment from account [ACCOUNTNUMBER].",
+        "privacy_mask": [
+            {
+                "value": "2d28:d7dc:a2cd:ce18:cf6d:b09e:ca1e:ef44",
+                "start": 35,
+                "end": 74,
+                "label": "IPV6"
+            },
+            {
+                "value": "80273798",
+                "start": 116,
+                "end": 124,
+                "label": "ACCOUNTNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "The 16876-1903 district has shown significant improvement in their educational standards since the reform has been implemented. Please update me on progress at Apt. 270 via a registered post.",
+        "output": "The [ZIPCODE] district has shown significant improvement in their educational standards since the reform has been implemented. Please update me on progress at [SECONDARYADDRESS] via a registered post.",
+        "privacy_mask": [
+            {
+                "value": "16876-1903",
+                "start": 4,
+                "end": 14,
+                "label": "ZIPCODE"
+            },
+            {
+                "value": "Apt. 270",
+                "start": 160,
+                "end": 168,
+                "label": "SECONDARYADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Our data from 043d:4145:3fe7:ada4:13d2:71a5:951a:8afc is indicating high user engagement. I'd recommend increasing our digital marketing spend for this. Can we talk about this on https://close-reduction.org/?",
+        "output": "Our data from [IPV6] is indicating high user engagement. I'd recommend increasing our digital marketing spend for this. Can we talk about this on [URL]?",
+        "privacy_mask": [
+            {
+                "value": "043d:4145:3fe7:ada4:13d2:71a5:951a:8afc",
+                "start": 14,
+                "end": 53,
+                "label": "IPV6"
+            },
+            {
+                "value": "https://close-reduction.org/",
+                "start": 179,
+                "end": 207,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "Greetings, Elaina James Cruickshank! We would like to discuss more STEM opportunities in your school. Let's meet in Rhode Island, our team will reach out to you via your phone number - 064-9884-2586.",
+        "output": "Greetings, [FIRSTNAME] [MIDDLENAME] [LASTNAME]! We would like to discuss more STEM opportunities in your school. Let's meet in [STATE], our team will reach out to you via your phone number - [PHONENUMBER].",
+        "privacy_mask": [
+            {
+                "value": "Elaina",
+                "start": 11,
+                "end": 17,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "James",
+                "start": 18,
+                "end": 23,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Cruickshank",
+                "start": 24,
+                "end": 35,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "Rhode Island",
+                "start": 116,
+                "end": 128,
+                "label": "STATE"
+            },
+            {
+                "value": "064-9884-2586",
+                "start": 185,
+                "end": 198,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Update- surgical procedure funding for Tod is fully covered with donations to our 3tLQ3GxqtapdCg5G89WLy4iVZQWCQqXwySY. The surgery is happening on 06/08/2004.",
+        "output": "Update- surgical procedure funding for [FIRSTNAME] is fully covered with donations to our [BITCOINADDRESS]. The surgery is happening on [DOB].",
+        "privacy_mask": [
+            {
+                "value": "Tod",
+                "start": 39,
+                "end": 42,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "3tLQ3GxqtapdCg5G89WLy4iVZQWCQqXwySY",
+                "start": 82,
+                "end": 117,
+                "label": "BITCOINADDRESS"
+            },
+            {
+                "value": "06/08/2004",
+                "start": 147,
+                "end": 157,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Diagnostic interface at https://elderly-queen.org/ is unresponsive, is it due to my Opera/11.14 (X11; Linux i686; U; EO Presto/2.9.172 Version/12.00) settings?",
+        "output": "Diagnostic interface at [URL] is unresponsive, is it due to my [USERAGENT] settings?",
+        "privacy_mask": [
+            {
+                "value": "https://elderly-queen.org/",
+                "start": 24,
+                "end": 50,
+                "label": "URL"
+            },
+            {
+                "value": "Opera/11.14 (X11; Linux i686; U; EO Presto/2.9.172 Version/12.00)",
+                "start": 84,
+                "end": 149,
+                "label": "USERAGENT"
+            }
+        ]
+    },
+    {
+        "input": "Regarding the case you're working on, Ms., we found a potential link with this Bitcoin address: 3XjhTvun4BMxWbQcJXKMoecWKUTERxHRGo9Ce9. Thought it might be useful.",
+        "output": "Regarding the case you're working on, [PREFIX], we found a potential link with this Bitcoin address: [BITCOINADDRESS]. Thought it might be useful.",
+        "privacy_mask": [
+            {
+                "value": "Ms.",
+                "start": 38,
+                "end": 41,
+                "label": "PREFIX"
+            },
+            {
+                "value": "3XjhTvun4BMxWbQcJXKMoecWKUTERxHRGo9Ce9",
+                "start": 96,
+                "end": 134,
+                "label": "BITCOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "The pediatric care package has updated payment methods, now accepting 35mSTF6f2iAoVCRQKLuEG7muH5xKupzHmjT and 0x500dc4cc91ffbe767181490bcfc6678e6676dac7. To make a transaction, use your account number 87272939.",
+        "output": "The pediatric care package has updated payment methods, now accepting [BITCOINADDRESS] and [ETHEREUMADDRESS]. To make a transaction, use your account number [ACCOUNTNUMBER].",
+        "privacy_mask": [
+            {
+                "value": "35mSTF6f2iAoVCRQKLuEG7muH5xKupzHmjT",
+                "start": 70,
+                "end": 105,
+                "label": "BITCOINADDRESS"
+            },
+            {
+                "value": "0x500dc4cc91ffbe767181490bcfc6678e6676dac7",
+                "start": 110,
+                "end": 152,
+                "label": "ETHEREUMADDRESS"
+            },
+            {
+                "value": "87272939",
+                "start": 201,
+                "end": 209,
+                "label": "ACCOUNTNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Caleb Jordan's uniform has to be replaced due to noticeable wear and tear, please review the guidelines in your Personal Loan Account.",
+        "output": "[FIRSTNAME] [MIDDLENAME]'s uniform has to be replaced due to noticeable wear and tear, please review the guidelines in your [ACCOUNTNAME].",
+        "privacy_mask": [
+            {
+                "value": "Caleb",
+                "start": 0,
+                "end": 5,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Jordan",
+                "start": 6,
+                "end": 12,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Personal Loan Account",
+                "start": 112,
+                "end": 133,
+                "label": "ACCOUNTNAME"
+            }
+        ]
+    },
+    {
+        "input": "Hey August here. Spaced repetition can be effective. It's just the notion of reviewing material over time in increasing intervals. It's just like generating and remembering multiple passwords like mD17Yivp2Hti, 9KhLnNj72Hxz and qqhak_i9Xzju.",
+        "output": "Hey [MIDDLENAME] here. Spaced repetition can be effective. It's just the notion of reviewing material over time in increasing intervals. It's just like generating and remembering multiple passwords like [PASSWORD], [PASSWORD] and [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "August",
+                "start": 4,
+                "end": 10,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "mD17Yivp2Hti",
+                "start": 197,
+                "end": 209,
+                "label": "PASSWORD"
+            },
+            {
+                "value": "9KhLnNj72Hxz",
+                "start": 211,
+                "end": 223,
+                "label": "PASSWORD"
+            },
+            {
+                "value": "qqhak_i9Xzju",
+                "start": 228,
+                "end": 240,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Dear Rachael.Carroll, we noticed an excess amount of usage can lead to stress, we noticed the IP address tied to your account 236.242.186.107 shows high usage. It might be a good time to take a break and practice some stress management techniques.",
+        "output": "Dear [USERNAME], we noticed an excess amount of usage can lead to stress, we noticed the IP address tied to your account [IPV4] shows high usage. It might be a good time to take a break and practice some stress management techniques.",
+        "privacy_mask": [
+            {
+                "value": "Rachael.Carroll",
+                "start": 5,
+                "end": 20,
+                "label": "USERNAME"
+            },
+            {
+                "value": "236.242.186.107",
+                "start": 126,
+                "end": 141,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Patient code 2558377643280439 needs immediate treatment. Use BKCFMKCE for patient transfers.",
+        "output": "Patient code [MASKEDNUMBER] needs immediate treatment. Use [BIC] for patient transfers.",
+        "privacy_mask": [
+            {
+                "value": "2558377643280439",
+                "start": 13,
+                "end": 29,
+                "label": "MASKEDNUMBER"
+            },
+            {
+                "value": "BKCFMKCE",
+                "start": 61,
+                "end": 69,
+                "label": "BIC"
+            }
+        ]
+    },
+    {
+        "input": "Dear Eulalia, kindly update your residential details in the primary care patient portal. Your current address is registered as Suite 467.",
+        "output": "Dear [FIRSTNAME], kindly update your residential details in the primary care patient portal. Your current address is registered as [SECONDARYADDRESS].",
+        "privacy_mask": [
+            {
+                "value": "Eulalia",
+                "start": 5,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Suite 467",
+                "start": 127,
+                "end": 136,
+                "label": "SECONDARYADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Mark pickup of new equipment at location Apt. 804. Vehicle QJ24ECK will be used.",
+        "output": "Mark pickup of new equipment at location [SECONDARYADDRESS]. Vehicle [VEHICLEVRM] will be used.",
+        "privacy_mask": [
+            {
+                "value": "Apt. 804",
+                "start": 41,
+                "end": 49,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "QJ24ECK",
+                "start": 59,
+                "end": 66,
+                "label": "VEHICLEVRM"
+            }
+        ]
+    },
+    {
+        "input": "The next Chronic Disease Management meeting will be held at Lynch Plain, Apt. 760, Basel-Landschaft, 49697-6297.",
+        "output": "The next Chronic Disease Management meeting will be held at [STREET], [SECONDARYADDRESS], [STATE], [ZIPCODE].",
+        "privacy_mask": [
+            {
+                "value": "Lynch Plain",
+                "start": 60,
+                "end": 71,
+                "label": "STREET"
+            },
+            {
+                "value": "Apt. 760",
+                "start": 73,
+                "end": 81,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "Basel-Landschaft",
+                "start": 83,
+                "end": 99,
+                "label": "STATE"
+            },
+            {
+                "value": "49697-6297",
+                "start": 101,
+                "end": 111,
+                "label": "ZIPCODE"
+            }
+        ]
+    },
+    {
+        "input": "Re: Adjustment of Surface use agreement. Could you urgently look at the documents on the FTP server. Server address: fdb1:ecf9:0642:4c5e:c1d0:d3a5:fba2:20dc, login details: Katherine10, Password: JImRpJdujJKp.",
+        "output": "Re: Adjustment of Surface use agreement. Could you urgently look at the documents on the FTP server. Server address: [IPV6], login details: [USERNAME], Password: [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "fdb1:ecf9:0642:4c5e:c1d0:d3a5:fba2:20dc",
+                "start": 117,
+                "end": 156,
+                "label": "IPV6"
+            },
+            {
+                "value": "Katherine10",
+                "start": 173,
+                "end": 184,
+                "label": "USERNAME"
+            },
+            {
+                "value": "JImRpJdujJKp",
+                "start": 196,
+                "end": 208,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Using the loan account Personal Loan Account, please purchase psychological screening services from providers listed at https://rotten-veranda.name.",
+        "output": "Using the loan account [ACCOUNTNAME], please purchase psychological screening services from providers listed at [URL].",
+        "privacy_mask": [
+            {
+                "value": "Personal Loan Account",
+                "start": 23,
+                "end": 44,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "https://rotten-veranda.name",
+                "start": 120,
+                "end": 147,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "Introducing new sports activities. Sign up before Suite 288 on Windsor Close fills up!",
+        "output": "Introducing new sports activities. Sign up before [SECONDARYADDRESS] on [STREET] fills up!",
+        "privacy_mask": [
+            {
+                "value": "Suite 288",
+                "start": 50,
+                "end": 59,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "Windsor Close",
+                "start": 63,
+                "end": 76,
+                "label": "STREET"
+            }
+        ]
+    },
+    {
+        "input": "Just a reminder, the mentorship meet-up is this weekend. Foods and drinks with Serbian Dinar have been taken care of. Courtesy of New Saul General Hospitals.",
+        "output": "Just a reminder, the mentorship meet-up is this weekend. Foods and drinks with [CURRENCY] have been taken care of. Courtesy of [CITY] General Hospitals.",
+        "privacy_mask": [
+            {
+                "value": "Serbian Dinar",
+                "start": 79,
+                "end": 92,
+                "label": "CURRENCY"
+            },
+            {
+                "value": "New Saul",
+                "start": 130,
+                "end": 138,
+                "label": "CITY"
+            }
+        ]
+    },
+    {
+        "input": "Dear Bertram, our next group therapy session focuses on Designer and how they could benefit from cognitive behavioural therapy.",
+        "output": "Dear [FIRSTNAME], our next group therapy session focuses on [JOBTYPE] and how they could benefit from cognitive behavioural therapy.",
+        "privacy_mask": [
+            {
+                "value": "Bertram",
+                "start": 5,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Designer",
+                "start": 56,
+                "end": 64,
+                "label": "JOBTYPE"
+            }
+        ]
+    },
+    {
+        "input": "To register for the next series of teacher training, please provide your Investment Account 17456353 and ZRICCROT.",
+        "output": "To register for the next series of teacher training, please provide your [ACCOUNTNAME] [ACCOUNTNUMBER] and [BIC].",
+        "privacy_mask": [
+            {
+                "value": "Investment Account",
+                "start": 73,
+                "end": 91,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "17456353",
+                "start": 92,
+                "end": 100,
+                "label": "ACCOUNTNUMBER"
+            },
+            {
+                "value": "ZRICCROT",
+                "start": 105,
+                "end": 113,
+                "label": "BIC"
+            }
+        ]
+    },
+    {
+        "input": "Hello, The Internal Marketing Agent training course is now available online. Access it https://gloomy-toque.info using Nils30 and cP1gsWyjet_F.",
+        "output": "Hello, The [JOBTITLE] training course is now available online. Access it [URL] using [USERNAME] and [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "Internal Marketing Agent",
+                "start": 11,
+                "end": 35,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "https://gloomy-toque.info",
+                "start": 87,
+                "end": 112,
+                "label": "URL"
+            },
+            {
+                "value": "Nils30",
+                "start": 119,
+                "end": 125,
+                "label": "USERNAME"
+            },
+            {
+                "value": "cP1gsWyjet_F",
+                "start": 130,
+                "end": 142,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Dear Eleonore, a friendly reminder about the Parent-Teacher Association meeting on 18th October.",
+        "output": "Dear [FIRSTNAME], a friendly reminder about the Parent-Teacher Association meeting on [DATE].",
+        "privacy_mask": [
+            {
+                "value": "Eleonore",
+                "start": 5,
+                "end": 13,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "18th October",
+                "start": 83,
+                "end": 95,
+                "label": "DATE"
+            }
+        ]
+    },
+    {
+        "input": "Hi Alta, as agreed, we're transferring 0.0bkr to your bank account, SM11Z7680040090C4203870E80B. Please confirm funds have been received.",
+        "output": "Hi [FIRSTNAME], as agreed, we're transferring [AMOUNT][CURRENCYSYMBOL] to your bank account, [IBAN]. Please confirm funds have been received.",
+        "privacy_mask": [
+            {
+                "value": "Alta",
+                "start": 3,
+                "end": 7,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "0.0b",
+                "start": 39,
+                "end": 43,
+                "label": "AMOUNT"
+            },
+            {
+                "value": "kr",
+                "start": 43,
+                "end": 45,
+                "label": "CURRENCYSYMBOL"
+            },
+            {
+                "value": "SM11Z7680040090C4203870E80B",
+                "start": 68,
+                "end": 95,
+                "label": "IBAN"
+            }
+        ]
+    },
+    {
+        "input": "Lionel Parker Cummings, please remember to practice the techniques we've discussed in our sessions before our next appointment.",
+        "output": "[FIRSTNAME] [MIDDLENAME] [LASTNAME], please remember to practice the techniques we've discussed in our sessions before our next appointment.",
+        "privacy_mask": [
+            {
+                "value": "Lionel",
+                "start": 0,
+                "end": 6,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Parker",
+                "start": 7,
+                "end": 13,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Cummings",
+                "start": 14,
+                "end": 22,
+                "label": "LASTNAME"
+            }
+        ]
+    },
+    {
+        "input": "Hello Male to female, your upcoming marriage counseling session is scheduled for 4/45. Please use Crystal12 and X516Q8fZIDqQ to join the online session.",
+        "output": "Hello [GENDER], your upcoming marriage counseling session is scheduled for [DOB]. Please use [USERNAME] and [PASSWORD] to join the online session.",
+        "privacy_mask": [
+            {
+                "value": "Male to female",
+                "start": 6,
+                "end": 20,
+                "label": "GENDER"
+            },
+            {
+                "value": "4/45",
+                "start": 81,
+                "end": 85,
+                "label": "DOB"
+            },
+            {
+                "value": "Crystal12",
+                "start": 98,
+                "end": 107,
+                "label": "USERNAME"
+            },
+            {
+                "value": "X516Q8fZIDqQ",
+                "start": 112,
+                "end": 124,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "A health service user from The Spinney contacted us concerning the need for a homecare service for his elderly mother. We can find detailed information by calling this number 06.3603 7980.",
+        "output": "A health service user from [STREET] contacted us concerning the need for a homecare service for his elderly mother. We can find detailed information by calling this number [PHONENUMBER].",
+        "privacy_mask": [
+            {
+                "value": "The Spinney",
+                "start": 27,
+                "end": 38,
+                "label": "STREET"
+            },
+            {
+                "value": "06.3603 7980",
+                "start": 175,
+                "end": 187,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Team, Account Savings Account with masked number 9466727058134680 has filed a complaint about unauthorized transactions. An immediate investigation is required.",
+        "output": "Team, Account [ACCOUNTNAME] with masked number [MASKEDNUMBER] has filed a complaint about unauthorized transactions. An immediate investigation is required.",
+        "privacy_mask": [
+            {
+                "value": "Savings Account",
+                "start": 14,
+                "end": 29,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "9466727058134680",
+                "start": 49,
+                "end": 65,
+                "label": "MASKEDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "For order ID 9637978072314682, the below product is low on stock. The Infrastructure team needs to update the https://ample-guilt.net page. Pagac - Mohr should not be showing products that we can't deliver.",
+        "output": "For order ID [MASKEDNUMBER], the below product is low on stock. The [JOBAREA] team needs to update the [URL] page. [COMPANYNAME] should not be showing products that we can't deliver.",
+        "privacy_mask": [
+            {
+                "value": "9637978072314682",
+                "start": 13,
+                "end": 29,
+                "label": "MASKEDNUMBER"
+            },
+            {
+                "value": "Infrastructure",
+                "start": 70,
+                "end": 84,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "https://ample-guilt.net",
+                "start": 110,
+                "end": 133,
+                "label": "URL"
+            },
+            {
+                "value": "Pagac - Mohr",
+                "start": 140,
+                "end": 152,
+                "label": "COMPANYNAME"
+            }
+        ]
+    },
+    {
+        "input": "The health informatics team will host a meeting, led by team lead Marlee, in our offices in Utah.",
+        "output": "The health informatics team will host a meeting, led by team lead [FIRSTNAME], in our offices in [STATE].",
+        "privacy_mask": [
+            {
+                "value": "Marlee",
+                "start": 66,
+                "end": 72,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Utah",
+                "start": 92,
+                "end": 96,
+                "label": "STATE"
+            }
+        ]
+    },
+    {
+        "input": "Dear Alice, we require your insights on the impact of Social Emotional Learning on elementary school students. Please contact me at Kay3@gmail.com.",
+        "output": "Dear [FIRSTNAME], we require your insights on the impact of Social Emotional Learning on elementary school students. Please contact me at [EMAIL].",
+        "privacy_mask": [
+            {
+                "value": "Alice",
+                "start": 5,
+                "end": 10,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Kay3@gmail.com",
+                "start": 132,
+                "end": 146,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "As our leading Direct Mobility Agent, you are tasked with drawing a comprehensive contract for a property sale we have at State Street 78423.",
+        "output": "As our leading [JOBTITLE], you are tasked with drawing a comprehensive contract for a property sale we have at [STREET] [BUILDINGNUMBER].",
+        "privacy_mask": [
+            {
+                "value": "Direct Mobility Agent",
+                "start": 15,
+                "end": 36,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "State Street",
+                "start": 122,
+                "end": 134,
+                "label": "STREET"
+            },
+            {
+                "value": "78423",
+                "start": 135,
+                "end": 140,
+                "label": "BUILDINGNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Margret, this is a reminder about your psycho-oncology session tomorrow. Your Mobility experience is invaluable for us.",
+        "output": "[FIRSTNAME], this is a reminder about your psycho-oncology session tomorrow. Your [JOBAREA] experience is invaluable for us.",
+        "privacy_mask": [
+            {
+                "value": "Margret",
+                "start": 0,
+                "end": 7,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Mobility",
+                "start": 78,
+                "end": 86,
+                "label": "JOBAREA"
+            }
+        ]
+    },
+    {
+        "input": "Hello Kylee, preventive healthcare starts with you. Knowledge is power. Knowledge about your health can empower you to take action. We have detailed information on our website https://primary-stumbling.info. Your credentials are Krystina.West and mYUmWBvdTe7P.",
+        "output": "Hello [FIRSTNAME], preventive healthcare starts with you. Knowledge is power. Knowledge about your health can empower you to take action. We have detailed information on our website [URL]. Your credentials are [USERNAME] and [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "Kylee",
+                "start": 6,
+                "end": 11,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "https://primary-stumbling.info",
+                "start": 176,
+                "end": 206,
+                "label": "URL"
+            },
+            {
+                "value": "Krystina.West",
+                "start": 229,
+                "end": 242,
+                "label": "USERNAME"
+            },
+            {
+                "value": "mYUmWBvdTe7P",
+                "start": 247,
+                "end": 259,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Patient Crystel Robin Dietrich (May 11, 2003) was admitted to the Northeast wing. The patient's vitals are continuously being monitored. Make sure all data is recorded accurately.",
+        "output": "Patient [FIRSTNAME] [MIDDLENAME] [LASTNAME] ([DOB]) was admitted to the Northeast wing. The patient's vitals are continuously being monitored. Make sure all data is recorded accurately.",
+        "privacy_mask": [
+            {
+                "value": "Crystel",
+                "start": 8,
+                "end": 15,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Robin",
+                "start": 16,
+                "end": 21,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Dietrich",
+                "start": 22,
+                "end": 30,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "May 11, 2003",
+                "start": 32,
+                "end": 44,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Password reset link for your secure patient portal has been sent to 75.58.144.53. Click on the link and enter new password: nSrQfqmQo6kB. For assistance, contact us from registered 25-309451-909269-3.",
+        "output": "Password reset link for your secure patient portal has been sent to [IP]. Click on the link and enter new password: [PASSWORD]. For assistance, contact us from registered [PHONEIMEI].",
+        "privacy_mask": [
+            {
+                "value": "75.58.144.53",
+                "start": 68,
+                "end": 80,
+                "label": "IP"
+            },
+            {
+                "value": "nSrQfqmQo6kB",
+                "start": 124,
+                "end": 136,
+                "label": "PASSWORD"
+            },
+            {
+                "value": "25-309451-909269-3",
+                "start": 181,
+                "end": 199,
+                "label": "PHONEIMEI"
+            }
+        ]
+    },
+    {
+        "input": "Please check your 7154272732524217 on the portal for updates. Secure your portal with mySmvOvi7Fph. All payments made from DE79920709150894790485 ending with 3542853920446170 are instantly accepted.",
+        "output": "Please check your [MASKEDNUMBER] on the portal for updates. Secure your portal with [PASSWORD]. All payments made from [IBAN] ending with [MASKEDNUMBER] are instantly accepted.",
+        "privacy_mask": [
+            {
+                "value": "7154272732524217",
+                "start": 18,
+                "end": 34,
+                "label": "MASKEDNUMBER"
+            },
+            {
+                "value": "mySmvOvi7Fph",
+                "start": 86,
+                "end": 98,
+                "label": "PASSWORD"
+            },
+            {
+                "value": "DE79920709150894790485",
+                "start": 123,
+                "end": 145,
+                "label": "IBAN"
+            },
+            {
+                "value": "3542853920446170",
+                "start": 158,
+                "end": 174,
+                "label": "MASKEDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Dear Brant, referring to your ICU patient transport request, to verify your credentials, could you please reconfirm the last 4 digits of your card as 6944189316771870?",
+        "output": "Dear [FIRSTNAME], referring to your ICU patient transport request, to verify your credentials, could you please reconfirm the last 4 digits of your card as [MASKEDNUMBER]?",
+        "privacy_mask": [
+            {
+                "value": "Brant",
+                "start": 5,
+                "end": 10,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "6944189316771870",
+                "start": 150,
+                "end": 166,
+                "label": "MASKEDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Dear Charlie, we've noticed an unusual login attempt to your global health project database from IP 21.151.245.130. Please confirm if it was you.",
+        "output": "Dear [FIRSTNAME], we've noticed an unusual login attempt to your global health project database from IP [IPV4]. Please confirm if it was you.",
+        "privacy_mask": [
+            {
+                "value": "Charlie",
+                "start": 5,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "21.151.245.130",
+                "start": 100,
+                "end": 114,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Hello Guillermo_Armstrong, we have scheduled your remedial English classes in Room 9100 on Jenifer Harbor. Please bring your laptop and make sure the MAC address 96:36:59:da:a8:02 is registered.",
+        "output": "Hello [USERNAME], we have scheduled your remedial English classes in Room [BUILDINGNUMBER] on [STREET]. Please bring your laptop and make sure the MAC address [MAC] is registered.",
+        "privacy_mask": [
+            {
+                "value": "Guillermo_Armstrong",
+                "start": 6,
+                "end": 25,
+                "label": "USERNAME"
+            },
+            {
+                "value": "9100",
+                "start": 83,
+                "end": 87,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Jenifer Harbor",
+                "start": 91,
+                "end": 105,
+                "label": "STREET"
+            },
+            {
+                "value": "96:36:59:da:a8:02",
+                "start": 162,
+                "end": 179,
+                "label": "MAC"
+            }
+        ]
+    },
+    {
+        "input": "Your essay for the competition was incredible, James. Please share your Phone IMEI 39-644122-990786-8 for verification purposes.",
+        "output": "Your essay for the competition was incredible, [MIDDLENAME]. Please share your Phone IMEI [PHONEIMEI] for verification purposes.",
+        "privacy_mask": [
+            {
+                "value": "James",
+                "start": 47,
+                "end": 52,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "39-644122-990786-8",
+                "start": 83,
+                "end": 101,
+                "label": "PHONEIMEI"
+            }
+        ]
+    },
+    {
+        "input": "Miss, a Male Implementation professional at 89 years is navigating a mid-life crisis, balancing expectations and fears associated with her role and gender.",
+        "output": "[PREFIX], a [SEX] [JOBAREA] professional at [AGE] is navigating a mid-life crisis, balancing expectations and fears associated with her role and gender.",
+        "privacy_mask": [
+            {
+                "value": "Miss",
+                "start": 0,
+                "end": 4,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Male",
+                "start": 8,
+                "end": 12,
+                "label": "SEX"
+            },
+            {
+                "value": "Implementation",
+                "start": 13,
+                "end": 27,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "89 years",
+                "start": 44,
+                "end": 52,
+                "label": "AGE"
+            }
+        ]
+    },
+    {
+        "input": "The Sports Medicine seminar for Morgan County will be held virtually on 16/04/1914. Kindly confirm your attendance on IP 9.129.216.123 so we can share the access details with you.",
+        "output": "The Sports Medicine seminar for [COUNTY] will be held virtually on [DATE]. Kindly confirm your attendance on IP [IPV4] so we can share the access details with you.",
+        "privacy_mask": [
+            {
+                "value": "Morgan County",
+                "start": 32,
+                "end": 45,
+                "label": "COUNTY"
+            },
+            {
+                "value": "16/04/1914",
+                "start": 72,
+                "end": 82,
+                "label": "DATE"
+            },
+            {
+                "value": "9.129.216.123",
+                "start": 121,
+                "end": 134,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Dear Celine. Your registration for the academic competitions was successful! Your confirmation code is 1823435297460395. Please keep this number safe as it is vital for gaining access.",
+        "output": "Dear [FIRSTNAME]. Your registration for the academic competitions was successful! Your confirmation code is [MASKEDNUMBER]. Please keep this number safe as it is vital for gaining access.",
+        "privacy_mask": [
+            {
+                "value": "Celine",
+                "start": 5,
+                "end": 11,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "1823435297460395",
+                "start": 103,
+                "end": 119,
+                "label": "MASKEDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Avery, a client has filed for bankruptcy. We have the 53-114065-202139-7 of a device involved in multiple transactions. Could you follow this up?",
+        "output": "[MIDDLENAME], a client has filed for bankruptcy. We have the [PHONEIMEI] of a device involved in multiple transactions. Could you follow this up?",
+        "privacy_mask": [
+            {
+                "value": "Avery",
+                "start": 0,
+                "end": 5,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "53-114065-202139-7",
+                "start": 54,
+                "end": 72,
+                "label": "PHONEIMEI"
+            }
+        ]
+    },
+    {
+        "input": "Once school van (DK93VIC) arrives, bring the class to the lab on Kilback Land. Experience with actual tech gadgets is crucial for their skill development.",
+        "output": "Once school van ([VEHICLEVRM]) arrives, bring the class to the lab on [STREET]. Experience with actual tech gadgets is crucial for their skill development.",
+        "privacy_mask": [
+            {
+                "value": "DK93VIC",
+                "start": 17,
+                "end": 24,
+                "label": "VEHICLEVRM"
+            },
+            {
+                "value": "Kilback Land",
+                "start": 65,
+                "end": 77,
+                "label": "STREET"
+            }
+        ]
+    },
+    {
+        "input": "The exam date has been changed. New details are posted on https://rare-inauguration.org/. The password is 7cKnhJfoFLXn.",
+        "output": "The exam date has been changed. New details are posted on [URL]. The password is [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "https://rare-inauguration.org/",
+                "start": 58,
+                "end": 88,
+                "label": "URL"
+            },
+            {
+                "value": "7cKnhJfoFLXn",
+                "start": 106,
+                "end": 118,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Patient data including 25-902553-312415-7 and MYFPLKE7XXX is sensitive information and should be protected at all times.",
+        "output": "Patient data including [PHONEIMEI] and [BIC] is sensitive information and should be protected at all times.",
+        "privacy_mask": [
+            {
+                "value": "25-902553-312415-7",
+                "start": 23,
+                "end": 41,
+                "label": "PHONEIMEI"
+            },
+            {
+                "value": "MYFPLKE7XXX",
+                "start": 46,
+                "end": 57,
+                "label": "BIC"
+            }
+        ]
+    },
+    {
+        "input": "Your password has been reset to secure Credit Card Account, your new password is p1iag9RVxh1D.",
+        "output": "Your password has been reset to secure [ACCOUNTNAME], your new password is [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "Credit Card Account",
+                "start": 39,
+                "end": 58,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "p1iag9RVxh1D",
+                "start": 81,
+                "end": 93,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Greetings, I would like to have a session with Product Intranet Executive on career counseling. You can send me the details on my IPV4 address 83.98.114.29. Thank you.",
+        "output": "Greetings, I would like to have a session with [JOBTITLE] on career counseling. You can send me the details on my IPV4 address [IPV4]. Thank you.",
+        "privacy_mask": [
+            {
+                "value": "Product Intranet Executive",
+                "start": 47,
+                "end": 73,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "83.98.114.29",
+                "start": 143,
+                "end": 155,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Hello Dr., for the upcoming pediatric care session on 27/09/1927, due to some construction work in our building at 98468, Stiedemann Burg, we've shifted to a temporary address within the Northamptonshire county.",
+        "output": "Hello [PREFIX], for the upcoming pediatric care session on [DATE], due to some construction work in our building at [BUILDINGNUMBER], [STREET], we've shifted to a temporary address within the [COUNTY] county.",
+        "privacy_mask": [
+            {
+                "value": "Dr.",
+                "start": 6,
+                "end": 9,
+                "label": "PREFIX"
+            },
+            {
+                "value": "27/09/1927",
+                "start": 54,
+                "end": 64,
+                "label": "DATE"
+            },
+            {
+                "value": "98468",
+                "start": 115,
+                "end": 120,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Stiedemann Burg",
+                "start": 122,
+                "end": 137,
+                "label": "STREET"
+            },
+            {
+                "value": "Northamptonshire",
+                "start": 187,
+                "end": 203,
+                "label": "COUNTY"
+            }
+        ]
+    },
+    {
+        "input": "Arranging for a visit to New Mariano school to study their lunch program. Send details by end of day. Use the portal for submission, here's the link: https://splendid-cyclooxygenase.com/, with Craig.Sawayn & U8oR2fbwIRFH.",
+        "output": "Arranging for a visit to [CITY] school to study their lunch program. Send details by end of day. Use the portal for submission, here's the link: [URL], with [USERNAME] & [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "New Mariano",
+                "start": 25,
+                "end": 36,
+                "label": "CITY"
+            },
+            {
+                "value": "https://splendid-cyclooxygenase.com/",
+                "start": 150,
+                "end": 186,
+                "label": "URL"
+            },
+            {
+                "value": "Craig.Sawayn",
+                "start": 193,
+                "end": 205,
+                "label": "USERNAME"
+            },
+            {
+                "value": "U8oR2fbwIRFH",
+                "start": 208,
+                "end": 220,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "The patient with the Hazel has shown promising progress. Please notify the researchers at location [2.1673,-115.7436].",
+        "output": "The patient with the [EYECOLOR] has shown promising progress. Please notify the researchers at location [NEARBYGPSCOORDINATE].",
+        "privacy_mask": [
+            {
+                "value": "Hazel",
+                "start": 21,
+                "end": 26,
+                "label": "EYECOLOR"
+            },
+            {
+                "value": "[2.1673,-115.7436]",
+                "start": 99,
+                "end": 117,
+                "label": "NEARBYGPSCOORDINATE"
+            }
+        ]
+    },
+    {
+        "input": "The palliative care team will be available at Montgomery County district for post-hospitalization follow-up for patients. To schedule a visit, call the team on 0329.71863379.",
+        "output": "The palliative care team will be available at [COUNTY] district for post-hospitalization follow-up for patients. To schedule a visit, call the team on [PHONENUMBER].",
+        "privacy_mask": [
+            {
+                "value": "Montgomery County",
+                "start": 46,
+                "end": 63,
+                "label": "COUNTY"
+            },
+            {
+                "value": "0329.71863379",
+                "start": 160,
+                "end": 173,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "There is unlawful dumping of waste happening on Salvador Green, Sector Northeast. Shared details at https://fixed-porthole.net/.",
+        "output": "There is unlawful dumping of waste happening on [STREET], Sector [ORDINALDIRECTION]. Shared details at [URL].",
+        "privacy_mask": [
+            {
+                "value": "Salvador Green",
+                "start": 48,
+                "end": 62,
+                "label": "STREET"
+            },
+            {
+                "value": "Northeast",
+                "start": 71,
+                "end": 80,
+                "label": "ORDINALDIRECTION"
+            },
+            {
+                "value": "https://fixed-porthole.net/",
+                "start": 100,
+                "end": 127,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "Can you prepare a brief on animal protection laws across countries that use Somoni? Please, access the needed databases using the Litecoin address 3bn1SYGTzbiSb6LGsKvceZt384.",
+        "output": "Can you prepare a brief on animal protection laws across countries that use [CURRENCY]? Please, access the needed databases using the Litecoin address [LITECOINADDRESS].",
+        "privacy_mask": [
+            {
+                "value": "Somoni",
+                "start": 76,
+                "end": 82,
+                "label": "CURRENCY"
+            },
+            {
+                "value": "3bn1SYGTzbiSb6LGsKvceZt384",
+                "start": 147,
+                "end": 173,
+                "label": "LITECOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "The QA team has expressed concern over recent transactions from the credit card 2368647697789812 above the amount of 103938.72 Djibouti Franc. We need your assistance.",
+        "output": "The QA team has expressed concern over recent transactions from the credit card [CREDITCARDNUMBER] above the amount of [AMOUNT] [CURRENCY]. We need your assistance.",
+        "privacy_mask": [
+            {
+                "value": "2368647697789812",
+                "start": 80,
+                "end": 96,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "103938.72",
+                "start": 117,
+                "end": 126,
+                "label": "AMOUNT"
+            },
+            {
+                "value": "Djibouti Franc",
+                "start": 127,
+                "end": 141,
+                "label": "CURRENCY"
+            }
+        ]
+    },
+    {
+        "input": "Today, Frida_Sawayn spent an entire session talking about her transition from West Zelma to Mecklenburg-Vorpommern. Moving during her developmental age has affected her greatly. Reach out to Lula_Feest49 for Nicolas, Mohr and Spencer's records.",
+        "output": "Today, [USERNAME] spent an entire session talking about her transition from [CITY] to [STATE]. Moving during her developmental age has affected her greatly. Reach out to [USERNAME] for [COMPANYNAME]'s records.",
+        "privacy_mask": [
+            {
+                "value": "Frida_Sawayn",
+                "start": 7,
+                "end": 19,
+                "label": "USERNAME"
+            },
+            {
+                "value": "West Zelma",
+                "start": 78,
+                "end": 88,
+                "label": "CITY"
+            },
+            {
+                "value": "Mecklenburg-Vorpommern",
+                "start": 92,
+                "end": 114,
+                "label": "STATE"
+            },
+            {
+                "value": "Lula_Feest49",
+                "start": 191,
+                "end": 203,
+                "label": "USERNAME"
+            },
+            {
+                "value": "Nicolas, Mohr and Spencer",
+                "start": 208,
+                "end": 233,
+                "label": "COMPANYNAME"
+            }
+        ]
+    },
+    {
+        "input": "The Video Game Championship will take place NEARBYGPSCOORDINATE at street River Road building number 905, Minnesota.",
+        "output": "The Video Game Championship will take place NEARBYGPSCOORDINATE at street [STREET] building number [BUILDINGNUMBER], [STATE].",
+        "privacy_mask": [
+            {
+                "value": "River Road",
+                "start": 74,
+                "end": 84,
+                "label": "STREET"
+            },
+            {
+                "value": "905",
+                "start": 101,
+                "end": 104,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Minnesota",
+                "start": 106,
+                "end": 115,
+                "label": "STATE"
+            }
+        ]
+    },
+    {
+        "input": "Have you ever wondered how a STEM education can influence a National Interactions Planner? I found this interesting article on the subject: https://awkward-sponsor.org",
+        "output": "Have you ever wondered how a STEM education can influence a [JOBTITLE]? I found this interesting article on the subject: [URL]",
+        "privacy_mask": [
+            {
+                "value": "National Interactions Planner",
+                "start": 60,
+                "end": 89,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "https://awkward-sponsor.org",
+                "start": 140,
+                "end": 167,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "Looking at foreclosure for property 9779 Meadow Close if the mortgage isn't paid within the next week.",
+        "output": "Looking at foreclosure for property [BUILDINGNUMBER] [STREET] if the mortgage isn't paid within the next week.",
+        "privacy_mask": [
+            {
+                "value": "9779",
+                "start": 36,
+                "end": 40,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Meadow Close",
+                "start": 41,
+                "end": 53,
+                "label": "STREET"
+            }
+        ]
+    },
+    {
+        "input": "Request for a litigation report on the accident involving the vehicle with VIN N1A4RY31PDM558526. The report should be sent to Caleigh85@hotmail.com.",
+        "output": "Request for a litigation report on the accident involving the vehicle with VIN [VEHICLEVIN]. The report should be sent to [EMAIL].",
+        "privacy_mask": [
+            {
+                "value": "N1A4RY31PDM558526",
+                "start": 79,
+                "end": 96,
+                "label": "VEHICLEVIN"
+            },
+            {
+                "value": "Caleigh85@hotmail.com",
+                "start": 127,
+                "end": 148,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "Female patient care request from charity received, further details will be provided at 5 o'clock.",
+        "output": "[SEX] patient care request from charity received, further details will be provided at [TIME].",
+        "privacy_mask": [
+            {
+                "value": "Female",
+                "start": 0,
+                "end": 6,
+                "label": "SEX"
+            },
+            {
+                "value": "5 o'clock",
+                "start": 87,
+                "end": 96,
+                "label": "TIME"
+            }
+        ]
+    },
+    {
+        "input": "Potential security concerns reported for product model 2EWHERKP85CG98565. Contact Central Metrics Administrator immediately.",
+        "output": "Potential security concerns reported for product model [VEHICLEVIN]. Contact [JOBTITLE] immediately.",
+        "privacy_mask": [
+            {
+                "value": "2EWHERKP85CG98565",
+                "start": 55,
+                "end": 72,
+                "label": "VEHICLEVIN"
+            },
+            {
+                "value": "Central Metrics Administrator",
+                "start": 82,
+                "end": 111,
+                "label": "JOBTITLE"
+            }
+        ]
+    },
+    {
+        "input": "A webinar discussing the latest global health trends is being organized. administrators would appreciate your Director expertise. Please connect using IP address 0049:6deb:e9a2:dbba:8c4e:98ac:cb41:5ec4.",
+        "output": "A webinar discussing the latest global health trends is being organized. administrators would appreciate your [JOBTYPE] expertise. Please connect using IP address [IPV6].",
+        "privacy_mask": [
+            {
+                "value": "Director",
+                "start": 110,
+                "end": 118,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "0049:6deb:e9a2:dbba:8c4e:98ac:cb41:5ec4",
+                "start": 162,
+                "end": 201,
+                "label": "IPV6"
+            }
+        ]
+    },
+    {
+        "input": "Due to recent policy changes, we request all users to update their https://constant-emery.com profile by providing their most recent Gust_Bashirian. Feel free to contact us for any kind of confusion.",
+        "output": "Due to recent policy changes, we request all users to update their [URL] profile by providing their most recent [USERNAME]. Feel free to contact us for any kind of confusion.",
+        "privacy_mask": [
+            {
+                "value": "https://constant-emery.com",
+                "start": 67,
+                "end": 93,
+                "label": "URL"
+            },
+            {
+                "value": "Gust_Bashirian",
+                "start": 133,
+                "end": 147,
+                "label": "USERNAME"
+            }
+        ]
+    },
+    {
+        "input": "Subject: Securities law violation\nUser Rasheed28's account Checking Account (Number: 70425884) is under scrutiny. More details at https://willing-turkey.org/.",
+        "output": "Subject: Securities law violation\nUser [USERNAME]'s account [ACCOUNTNAME] (Number: [ACCOUNTNUMBER]) is under scrutiny. More details at [URL].",
+        "privacy_mask": [
+            {
+                "value": "Rasheed28",
+                "start": 39,
+                "end": 48,
+                "label": "USERNAME"
+            },
+            {
+                "value": "Checking Account",
+                "start": 59,
+                "end": 75,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "70425884",
+                "start": 85,
+                "end": 93,
+                "label": "ACCOUNTNUMBER"
+            },
+            {
+                "value": "https://willing-turkey.org/",
+                "start": 130,
+                "end": 157,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "Due to reports of cyberbullying, we have decided to conduct a session on digital citizenship. Our Product Mobility Assistant will conduct the session, focusing on how students should behave online. For more information, visit https://favorite-trove.info/.",
+        "output": "Due to reports of cyberbullying, we have decided to conduct a session on digital citizenship. Our [JOBTITLE] will conduct the session, focusing on how students should behave online. For more information, visit [URL].",
+        "privacy_mask": [
+            {
+                "value": "Product Mobility Assistant",
+                "start": 98,
+                "end": 124,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "https://favorite-trove.info/",
+                "start": 226,
+                "end": 254,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "\"Hello Margaretta, we observed Sunny had made unprecedented progress in Creative this semester. We expect the same dedication in other subjects as well. Keep up the good work, Alene!\"",
+        "output": "\"Hello [FIRSTNAME], we observed [FIRSTNAME] had made unprecedented progress in [JOBAREA] this semester. We expect the same dedication in other subjects as well. Keep up the good work, [FIRSTNAME]!\"",
+        "privacy_mask": [
+            {
+                "value": "Margaretta",
+                "start": 7,
+                "end": 17,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Sunny",
+                "start": 31,
+                "end": 36,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Creative",
+                "start": 72,
+                "end": 80,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "Alene",
+                "start": 176,
+                "end": 181,
+                "label": "FIRSTNAME"
+            }
+        ]
+    },
+    {
+        "input": "Dear Branding department, Please find attached the teaching assessments for Britney Renner. Their method of explaining the Cedi concept needs re-evaluations.",
+        "output": "Dear [JOBAREA] department, Please find attached the teaching assessments for [FIRSTNAME] [LASTNAME]. Their method of explaining the [CURRENCY] concept needs re-evaluations.",
+        "privacy_mask": [
+            {
+                "value": "Branding",
+                "start": 5,
+                "end": 13,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "Britney",
+                "start": 76,
+                "end": 83,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Renner",
+                "start": 84,
+                "end": 90,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "Cedi",
+                "start": 123,
+                "end": 127,
+                "label": "CURRENCY"
+            }
+        ]
+    },
+    {
+        "input": "Clare Jules Hintz, please be informed that your surgery is scheduled for 1993-07-12T11:59:21.116Z at West Othaburgh's major hospital. Kindly revert back to us on +348 953-960.4234 if you need transportation arrangements.",
+        "output": "[FIRSTNAME] [MIDDLENAME] [LASTNAME], please be informed that your surgery is scheduled for [DATE] at [CITY]'s major hospital. Kindly revert back to us on [PHONENUMBER] if you need transportation arrangements.",
+        "privacy_mask": [
+            {
+                "value": "Clare",
+                "start": 0,
+                "end": 5,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Jules",
+                "start": 6,
+                "end": 11,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Hintz",
+                "start": 12,
+                "end": 17,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "1993-07-12T11:59:21.116Z",
+                "start": 73,
+                "end": 97,
+                "label": "DATE"
+            },
+            {
+                "value": "West Othaburgh",
+                "start": 101,
+                "end": 115,
+                "label": "CITY"
+            },
+            {
+                "value": "+348 953-960.4234",
+                "start": 162,
+                "end": 179,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Any remaining fees for the outdoor education class can be paid to GE27SH3008983103806008. Please make sure to specify diners_club in transaction purpose.",
+        "output": "Any remaining fees for the outdoor education class can be paid to [IBAN]. Please make sure to specify [CREDITCARDISSUER] in transaction purpose.",
+        "privacy_mask": [
+            {
+                "value": "GE27SH3008983103806008",
+                "start": 66,
+                "end": 88,
+                "label": "IBAN"
+            },
+            {
+                "value": "diners_club",
+                "start": 118,
+                "end": 129,
+                "label": "CREDITCARDISSUER"
+            }
+        ]
+    },
+    {
+        "input": "To make sure we have the right contact details, could you please confirm your address (397, Apt. 662) and (32).9592-6843 by replying to this email at Antonina5@yahoo.com?",
+        "output": "To make sure we have the right contact details, could you please confirm your address ([BUILDINGNUMBER], [SECONDARYADDRESS]) and [PHONENUMBER] by replying to this email at [EMAIL]?",
+        "privacy_mask": [
+            {
+                "value": "397",
+                "start": 87,
+                "end": 90,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Apt. 662",
+                "start": 92,
+                "end": 100,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "(32).9592-6843",
+                "start": 106,
+                "end": 120,
+                "label": "PHONENUMBER"
+            },
+            {
+                "value": "Antonina5@yahoo.com",
+                "start": 150,
+                "end": 169,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "Fetch the health records of patient Female via system Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.3; Trident/4.1; .NET CLR 1.2.86982.2), previously updated on 4/32.",
+        "output": "Fetch the health records of patient [SEX] via system [USERAGENT], previously updated on [DOB].",
+        "privacy_mask": [
+            {
+                "value": "Female",
+                "start": 36,
+                "end": 42,
+                "label": "SEX"
+            },
+            {
+                "value": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.3; Trident/4.1; .NET CLR 1.2.86982.2)",
+                "start": 54,
+                "end": 139,
+                "label": "USERAGENT"
+            },
+            {
+                "value": "4/32",
+                "start": 163,
+                "end": 167,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Dear Parent, your child's safety is our priority, that's why we need to know who is picking them at 11:36 AM. Please share the P370T6949AM178390 and MG84SMH of the vehicle.",
+        "output": "Dear Parent, your child's safety is our priority, that's why we need to know who is picking them at [TIME]. Please share the [VEHICLEVIN] and [VEHICLEVRM] of the vehicle.",
+        "privacy_mask": [
+            {
+                "value": "11:36 AM",
+                "start": 100,
+                "end": 108,
+                "label": "TIME"
+            },
+            {
+                "value": "P370T6949AM178390",
+                "start": 127,
+                "end": 144,
+                "label": "VEHICLEVIN"
+            },
+            {
+                "value": "MG84SMH",
+                "start": 149,
+                "end": 156,
+                "label": "VEHICLEVRM"
+            }
+        ]
+    },
+    {
+        "input": "Oncology department update: Please remember the 5ba5:3b58:6542:9fcc:0e8f:b8fa:fdd4:9c7b implementation meeting is coming up. Make sure to be at the [71.9845,-148.2407] conference room with your work-issued devices tagged with bf:4a:2b:0f:58:ea. We will discuss potential improvements to our medical database.",
+        "output": "Oncology department update: Please remember the [IPV6] implementation meeting is coming up. Make sure to be at the [NEARBYGPSCOORDINATE] conference room with your work-issued devices tagged with [MAC]. We will discuss potential improvements to our medical database.",
+        "privacy_mask": [
+            {
+                "value": "5ba5:3b58:6542:9fcc:0e8f:b8fa:fdd4:9c7b",
+                "start": 48,
+                "end": 87,
+                "label": "IPV6"
+            },
+            {
+                "value": "[71.9845,-148.2407]",
+                "start": 148,
+                "end": 167,
+                "label": "NEARBYGPSCOORDINATE"
+            },
+            {
+                "value": "bf:4a:2b:0f:58:ea",
+                "start": 226,
+                "end": 243,
+                "label": "MAC"
+            }
+        ]
+    },
+    {
+        "input": "\"This is to notify you, Quinn, of your successful enrolment in our mentorship program at Gulgowski, Graham and Beatty. Your upcoming meeting with your mentee is scheduled on 24/06/1905. Please confirm receipt of this message.\"",
+        "output": "\"This is to notify you, [MIDDLENAME], of your successful enrolment in our mentorship program at [COMPANYNAME]. Your upcoming meeting with your mentee is scheduled on [DOB]. Please confirm receipt of this message.\"",
+        "privacy_mask": [
+            {
+                "value": "Quinn",
+                "start": 24,
+                "end": 29,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Gulgowski, Graham and Beatty",
+                "start": 89,
+                "end": 117,
+                "label": "COMPANYNAME"
+            },
+            {
+                "value": "24/06/1905",
+                "start": 174,
+                "end": 184,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Preparing financial projections for East Midlands branch. Need Nigel_Price63 for task delegation.",
+        "output": "Preparing financial projections for [STATE] branch. Need [USERNAME] for task delegation.",
+        "privacy_mask": [
+            {
+                "value": "East Midlands",
+                "start": 36,
+                "end": 49,
+                "label": "STATE"
+            },
+            {
+                "value": "Nigel_Price63",
+                "start": 63,
+                "end": 76,
+                "label": "USERNAME"
+            }
+        ]
+    },
+    {
+        "input": "Hi Strategist, under the Employment law of Norfolk, you're entitled to a safe & healthy work environment regardless of your Male.",
+        "output": "Hi [JOBTYPE], under the Employment law of [COUNTY], you're entitled to a safe & healthy work environment regardless of your [SEX].",
+        "privacy_mask": [
+            {
+                "value": "Strategist",
+                "start": 3,
+                "end": 13,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "Norfolk",
+                "start": 43,
+                "end": 50,
+                "label": "COUNTY"
+            },
+            {
+                "value": "Male",
+                "start": 124,
+                "end": 128,
+                "label": "SEX"
+            }
+        ]
+    },
+    {
+        "input": "I will be available in my room with the mac address d3:bb:47:af:a2:a8 after 5 o'clock. We can discuss our new campaign on alternative medicines targeting Cisgender man audiences during that time.",
+        "output": "I will be available in my room with the mac address [MAC] after [TIME]. We can discuss our new campaign on alternative medicines targeting [GENDER] audiences during that time.",
+        "privacy_mask": [
+            {
+                "value": "d3:bb:47:af:a2:a8",
+                "start": 52,
+                "end": 69,
+                "label": "MAC"
+            },
+            {
+                "value": "5 o'clock",
+                "start": 76,
+                "end": 85,
+                "label": "TIME"
+            },
+            {
+                "value": "Cisgender man",
+                "start": 154,
+                "end": 167,
+                "label": "GENDER"
+            }
+        ]
+    },
+    {
+        "input": "Extra funding needed for academic competitions. Transfer Guyana Dollar from 1uTqh3p8cFiG4S9EZdHdU5e1awe7 to our account for settlement. Notify when done.",
+        "output": "Extra funding needed for academic competitions. Transfer [CURRENCY] from [BITCOINADDRESS] to our account for settlement. Notify when done.",
+        "privacy_mask": [
+            {
+                "value": "Guyana Dollar",
+                "start": 57,
+                "end": 70,
+                "label": "CURRENCY"
+            },
+            {
+                "value": "1uTqh3p8cFiG4S9EZdHdU5e1awe7",
+                "start": 76,
+                "end": 104,
+                "label": "BITCOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "For documentation purposes, ensure details such as client's MAC address 1d:d8:97:09:54:39, credit issuer diners_club, credit card number 7176783203746358, and IPV4 128.195.150.187 are kept confidential.",
+        "output": "For documentation purposes, ensure details such as client's MAC address [MAC], credit issuer [CREDITCARDISSUER], credit card number [CREDITCARDNUMBER], and IPV4 [IPV4] are kept confidential.",
+        "privacy_mask": [
+            {
+                "value": "1d:d8:97:09:54:39",
+                "start": 72,
+                "end": 89,
+                "label": "MAC"
+            },
+            {
+                "value": "diners_club",
+                "start": 105,
+                "end": 116,
+                "label": "CREDITCARDISSUER"
+            },
+            {
+                "value": "7176783203746358",
+                "start": 137,
+                "end": 153,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "128.195.150.187",
+                "start": 164,
+                "end": 179,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Representative please check the inventory levels in 4212. A discrepancy noticed in the records.",
+        "output": "[JOBTYPE] please check the inventory levels in [BUILDINGNUMBER]. A discrepancy noticed in the records.",
+        "privacy_mask": [
+            {
+                "value": "Representative",
+                "start": 0,
+                "end": 14,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "4212",
+                "start": 52,
+                "end": 56,
+                "label": "BUILDINGNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Good day Manager, We are planning some refreshing changes to our team in Parisian, Ullrich and Steuber. Your specialist knowledge would be tremendously useful to us. Please check https://heavy-spike.biz for details.",
+        "output": "Good day [JOBTYPE], We are planning some refreshing changes to our team in [COMPANYNAME]. Your specialist knowledge would be tremendously useful to us. Please check [URL] for details.",
+        "privacy_mask": [
+            {
+                "value": "Manager",
+                "start": 9,
+                "end": 16,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "Parisian, Ullrich and Steuber",
+                "start": 73,
+                "end": 102,
+                "label": "COMPANYNAME"
+            },
+            {
+                "value": "https://heavy-spike.biz",
+                "start": 179,
+                "end": 202,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "Test results for Angela Mills available after 11/42 at Apt. 598. Please reply to Cordie_Conn7@hotmail.com.",
+        "output": "Test results for [FIRSTNAME] [LASTNAME] available after [DATE] at [SECONDARYADDRESS]. Please reply to [EMAIL].",
+        "privacy_mask": [
+            {
+                "value": "Angela",
+                "start": 17,
+                "end": 23,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Mills",
+                "start": 24,
+                "end": 29,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "11/42",
+                "start": 46,
+                "end": 51,
+                "label": "DATE"
+            },
+            {
+                "value": "Apt. 598",
+                "start": 55,
+                "end": 63,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "Cordie_Conn7@hotmail.com",
+                "start": 81,
+                "end": 105,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "\"Our team requires access to your cryptocurrency wallets for further investigation. Could you provide your Bitcoin address 3D1mKZsKocBH2VwN8i6K2zsZMn4R8tXkLPks, Litecoin address McppwX6jwJSdFnJzxEWngbPmR6 and Ethereum address 0x3fc7a77ae84beb2a0caac1180feccf1a9ee7d776, please?\"",
+        "output": "\"Our team requires access to your cryptocurrency wallets for further investigation. Could you provide your Bitcoin address [BITCOINADDRESS], Litecoin address [LITECOINADDRESS] and Ethereum address [ETHEREUMADDRESS], please?\"",
+        "privacy_mask": [
+            {
+                "value": "3D1mKZsKocBH2VwN8i6K2zsZMn4R8tXkLPks",
+                "start": 123,
+                "end": 159,
+                "label": "BITCOINADDRESS"
+            },
+            {
+                "value": "McppwX6jwJSdFnJzxEWngbPmR6",
+                "start": 178,
+                "end": 204,
+                "label": "LITECOINADDRESS"
+            },
+            {
+                "value": "0x3fc7a77ae84beb2a0caac1180feccf1a9ee7d776",
+                "start": 226,
+                "end": 268,
+                "label": "ETHEREUMADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Planning for next term nutritious options from Sonia Mill, Hesse. For more details, please contact via school's Bitcoin address 1X279uZQC9PQZFvANXkTa4LWZr7iMRGD.",
+        "output": "Planning for next term nutritious options from [STREET], [STATE]. For more details, please contact via school's Bitcoin address [BITCOINADDRESS].",
+        "privacy_mask": [
+            {
+                "value": "Sonia Mill",
+                "start": 47,
+                "end": 57,
+                "label": "STREET"
+            },
+            {
+                "value": "Hesse",
+                "start": 59,
+                "end": 64,
+                "label": "STATE"
+            },
+            {
+                "value": "1X279uZQC9PQZFvANXkTa4LWZr7iMRGD",
+                "start": 128,
+                "end": 160,
+                "label": "BITCOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Upon entering the 1894, ensure you're adhering to all safety protocols. Violations will be reported to Corporate Applications Developer.",
+        "output": "Upon entering the [BUILDINGNUMBER], ensure you're adhering to all safety protocols. Violations will be reported to [JOBTITLE].",
+        "privacy_mask": [
+            {
+                "value": "1894",
+                "start": 18,
+                "end": 22,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Corporate Applications Developer",
+                "start": 103,
+                "end": 135,
+                "label": "JOBTITLE"
+            }
+        ]
+    },
+    {
+        "input": "Dr. Boyle, we advise inputting your cryptocurrency accounts including 1rv4uPwUKXPCXVGyQ1T8sC5PrDGrfD6CV1, 0xc0ac525e78689c15421f1bcafb5d56c4b37fa6eb and 3KAtXuCu5dWwRrqgeXNAUXbts1 in your estate planning documents.",
+        "output": "[PREFIX] [LASTNAME], we advise inputting your cryptocurrency accounts including [BITCOINADDRESS], [ETHEREUMADDRESS] and [LITECOINADDRESS] in your estate planning documents.",
+        "privacy_mask": [
+            {
+                "value": "Dr.",
+                "start": 0,
+                "end": 3,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Boyle",
+                "start": 4,
+                "end": 9,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "1rv4uPwUKXPCXVGyQ1T8sC5PrDGrfD6CV1",
+                "start": 70,
+                "end": 104,
+                "label": "BITCOINADDRESS"
+            },
+            {
+                "value": "0xc0ac525e78689c15421f1bcafb5d56c4b37fa6eb",
+                "start": 106,
+                "end": 148,
+                "label": "ETHEREUMADDRESS"
+            },
+            {
+                "value": "3KAtXuCu5dWwRrqgeXNAUXbts1",
+                "start": 153,
+                "end": 179,
+                "label": "LITECOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "We need your technical expertise, Avis, in resolving issues with our global education servers. We've been experiencing abnormalities with the IP 30.32.68.100.",
+        "output": "We need your technical expertise, [FIRSTNAME], in resolving issues with our global education servers. We've been experiencing abnormalities with the IP [IPV4].",
+        "privacy_mask": [
+            {
+                "value": "Avis",
+                "start": 34,
+                "end": 38,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "30.32.68.100",
+                "start": 145,
+                "end": 157,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Jaycee, I am pleased to report Male is doing considerably well in her History remediation sessions. Be informed, the payment for this month is due. Drop it to 0x32ea82bfaca47777dcc57a8e9dec6b7b0492fdce to confirm your investment in her academic success.",
+        "output": "[FIRSTNAME], I am pleased to report [SEX] is doing considerably well in her History remediation sessions. Be informed, the payment for this month is due. Drop it to [ETHEREUMADDRESS] to confirm your investment in her academic success.",
+        "privacy_mask": [
+            {
+                "value": "Jaycee",
+                "start": 0,
+                "end": 6,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Male",
+                "start": 31,
+                "end": 35,
+                "label": "SEX"
+            },
+            {
+                "value": "0x32ea82bfaca47777dcc57a8e9dec6b7b0492fdce",
+                "start": 159,
+                "end": 201,
+                "label": "ETHEREUMADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Confirming the address for our spec. ed. workshop: 73572 Center Road, Suite 991, 76865-6332. Please reply ASAP.",
+        "output": "Confirming the address for our spec. ed. workshop: [BUILDINGNUMBER] [STREET], [SECONDARYADDRESS], [ZIPCODE]. Please reply ASAP.",
+        "privacy_mask": [
+            {
+                "value": "73572",
+                "start": 51,
+                "end": 56,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Center Road",
+                "start": 57,
+                "end": 68,
+                "label": "STREET"
+            },
+            {
+                "value": "Suite 991",
+                "start": 70,
+                "end": 79,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "76865-6332",
+                "start": 81,
+                "end": 91,
+                "label": "ZIPCODE"
+            }
+        ]
+    },
+    {
+        "input": "Student behavior management works best when required infrastructure is in place, such as necessary tools to support. Parents can contact our coordinator Orchestrator at 34-828626-634486-6 for any queries. The resources and tools we provide are stored securely and accessed using 2260.",
+        "output": "Student behavior management works best when required infrastructure is in place, such as necessary tools to support. Parents can contact our coordinator [JOBTYPE] at [PHONEIMEI] for any queries. The resources and tools we provide are stored securely and accessed using [PIN].",
+        "privacy_mask": [
+            {
+                "value": "Orchestrator",
+                "start": 153,
+                "end": 165,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "34-828626-634486-6",
+                "start": 169,
+                "end": 187,
+                "label": "PHONEIMEI"
+            },
+            {
+                "value": "2260",
+                "start": 279,
+                "end": 283,
+                "label": "PIN"
+            }
+        ]
+    },
+    {
+        "input": "'Dear Hailey, your STEM project has been approved. Please send the PAB denominated payment to this 32NwoEuyFKiqdHp9E9H4YC7np8YDQBGKQhV.'",
+        "output": "'Dear [FIRSTNAME], your STEM project has been approved. Please send the [CURRENCYCODE] denominated payment to this [BITCOINADDRESS].'",
+        "privacy_mask": [
+            {
+                "value": "Hailey",
+                "start": 6,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "PAB",
+                "start": 67,
+                "end": 70,
+                "label": "CURRENCYCODE"
+            },
+            {
+                "value": "32NwoEuyFKiqdHp9E9H4YC7np8YDQBGKQhV",
+                "start": 99,
+                "end": 134,
+                "label": "BITCOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Clay County is looking for new regulations on international trade law. Visit our https://majestic-repeat.biz site to stay informed.",
+        "output": "[COUNTY] is looking for new regulations on international trade law. Visit our [URL] site to stay informed.",
+        "privacy_mask": [
+            {
+                "value": "Clay County",
+                "start": 0,
+                "end": 11,
+                "label": "COUNTY"
+            },
+            {
+                "value": "https://majestic-repeat.biz",
+                "start": 81,
+                "end": 108,
+                "label": "URL"
+            }
+        ]
+    },
+    {
+        "input": "The Scouts Club is headed towards the Southeast direction for the next camping trip. Remember to bring your 55.234.29.159 trackers & 87608 region map. Anyone interested jab your name in by 6/87.",
+        "output": "The Scouts Club is headed towards the [ORDINALDIRECTION] direction for the next camping trip. Remember to bring your [IP] trackers & [ZIPCODE] region map. Anyone interested jab your name in by [DOB].",
+        "privacy_mask": [
+            {
+                "value": "Southeast",
+                "start": 38,
+                "end": 47,
+                "label": "ORDINALDIRECTION"
+            },
+            {
+                "value": "55.234.29.159",
+                "start": 108,
+                "end": 121,
+                "label": "IP"
+            },
+            {
+                "value": "87608",
+                "start": 133,
+                "end": 138,
+                "label": "ZIPCODE"
+            },
+            {
+                "value": "6/87",
+                "start": 189,
+                "end": 193,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Ms. Corkery, as an Dynamic Communications Agent, you have a special responsibility for the animals in your care at Pfeffer and Sons. I strongly urge you to ensure that all animals are treated in accordance with current regulations.",
+        "output": "[PREFIX] [LASTNAME], as an [JOBTITLE], you have a special responsibility for the animals in your care at [COMPANYNAME]. I strongly urge you to ensure that all animals are treated in accordance with current regulations.",
+        "privacy_mask": [
+            {
+                "value": "Ms.",
+                "start": 0,
+                "end": 3,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Corkery",
+                "start": 4,
+                "end": 11,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "Dynamic Communications Agent",
+                "start": 19,
+                "end": 47,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "Pfeffer and Sons",
+                "start": 115,
+                "end": 131,
+                "label": "COMPANYNAME"
+            }
+        ]
+    },
+    {
+        "input": "The medical imaging test for Man Female from Grant County scheduled for March 25, 1991 has been postponed due to machine failure. Remuneration for additional costs incurred can be transferred to FI1900903114013613.",
+        "output": "The medical imaging test for [GENDER] [SEX] from [COUNTY] scheduled for [DOB] has been postponed due to machine failure. Remuneration for additional costs incurred can be transferred to [IBAN].",
+        "privacy_mask": [
+            {
+                "value": "Man",
+                "start": 29,
+                "end": 32,
+                "label": "GENDER"
+            },
+            {
+                "value": "Female",
+                "start": 33,
+                "end": 39,
+                "label": "SEX"
+            },
+            {
+                "value": "Grant County",
+                "start": 45,
+                "end": 57,
+                "label": "COUNTY"
+            },
+            {
+                "value": "March 25, 1991",
+                "start": 72,
+                "end": 86,
+                "label": "DOB"
+            },
+            {
+                "value": "FI1900903114013613",
+                "start": 195,
+                "end": 213,
+                "label": "IBAN"
+            }
+        ]
+    },
+    {
+        "input": "Dr. Sipes, a part of the contract states that the total balance shall be transferred to the account 56014412 associated with the IS637619911624577717001369. Could you confirm whether this is accurate?",
+        "output": "[PREFIX] [LASTNAME], a part of the contract states that the total balance shall be transferred to the account [ACCOUNTNUMBER] associated with the [IBAN]. Could you confirm whether this is accurate?",
+        "privacy_mask": [
+            {
+                "value": "Dr.",
+                "start": 0,
+                "end": 3,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Sipes",
+                "start": 4,
+                "end": 9,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "56014412",
+                "start": 100,
+                "end": 108,
+                "label": "ACCOUNTNUMBER"
+            },
+            {
+                "value": "IS637619911624577717001369",
+                "start": 129,
+                "end": 155,
+                "label": "IBAN"
+            }
+        ]
+    },
+    {
+        "input": "Darren, Change Management training to be held at 945 Rippin Throughway will require your Credit Card Account, the password will be sent later. Keep connected for further instructions on 85-022597-998145-7.",
+        "output": "[FIRSTNAME], Change Management training to be held at [BUILDINGNUMBER] [STREET] will require your [ACCOUNTNAME], the password will be sent later. Keep connected for further instructions on [PHONEIMEI].",
+        "privacy_mask": [
+            {
+                "value": "Darren",
+                "start": 0,
+                "end": 6,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "945",
+                "start": 49,
+                "end": 52,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Rippin Throughway",
+                "start": 53,
+                "end": 70,
+                "label": "STREET"
+            },
+            {
+                "value": "Credit Card Account",
+                "start": 89,
+                "end": 108,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "85-022597-998145-7",
+                "start": 186,
+                "end": 204,
+                "label": "PHONEIMEI"
+            }
+        ]
+    },
+    {
+        "input": "Our state-of-the-art physical therapy resources for Female Lucienne Wolff are now available at https://barren-secretary.biz Use Kobe.Rogahn97 and ZodC5TVrrViM to log in.",
+        "output": "Our state-of-the-art physical therapy resources for [SEX] [FIRSTNAME] [LASTNAME] are now available at [URL] Use [USERNAME] and [PASSWORD] to log in.",
+        "privacy_mask": [
+            {
+                "value": "Female",
+                "start": 52,
+                "end": 58,
+                "label": "SEX"
+            },
+            {
+                "value": "Lucienne",
+                "start": 59,
+                "end": 67,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Wolff",
+                "start": 68,
+                "end": 73,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "https://barren-secretary.biz",
+                "start": 95,
+                "end": 123,
+                "label": "URL"
+            },
+            {
+                "value": "Kobe.Rogahn97",
+                "start": 128,
+                "end": 141,
+                "label": "USERNAME"
+            },
+            {
+                "value": "ZodC5TVrrViM",
+                "start": 146,
+                "end": 158,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "As psycho-oncology continues to evolve, your knowledge as a Corporate Web Strategist may be critical for our research at https://interesting-grant.info. We look forward to having you on our panel, Orie_Batz.",
+        "output": "As psycho-oncology continues to evolve, your knowledge as a [JOBTITLE] may be critical for our research at [URL]. We look forward to having you on our panel, [USERNAME].",
+        "privacy_mask": [
+            {
+                "value": "Corporate Web Strategist",
+                "start": 60,
+                "end": 84,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "https://interesting-grant.info",
+                "start": 121,
+                "end": 151,
+                "label": "URL"
+            },
+            {
+                "value": "Orie_Batz",
+                "start": 197,
+                "end": 206,
+                "label": "USERNAME"
+            }
+        ]
+    },
+    {
+        "input": "Urgent! A customer from in Clwyd is concerned about reading information online suggesting the payment partner used for their account Investment Account has failed. Device info: user agent Opera/9.42 (Windows NT 5.3; U; SK Presto/2.9.170 Version/11.00), IP 40.33.10.101.",
+        "output": "Urgent! A customer from in [COUNTY] is concerned about reading information online suggesting the payment partner used for their account [ACCOUNTNAME] has failed. Device info: user agent [USERAGENT], IP [IPV4].",
+        "privacy_mask": [
+            {
+                "value": "Clwyd",
+                "start": 27,
+                "end": 32,
+                "label": "COUNTY"
+            },
+            {
+                "value": "Investment Account",
+                "start": 133,
+                "end": 151,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "Opera/9.42 (Windows NT 5.3; U; SK Presto/2.9.170 Version/11.00)",
+                "start": 188,
+                "end": 251,
+                "label": "USERAGENT"
+            },
+            {
+                "value": "40.33.10.101",
+                "start": 256,
+                "end": 268,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "To achieve progress in our Solutions, the collaboration of highly experienced professionals like River is indispensable. We aim to build better higher education policies for Thuringia university.",
+        "output": "To achieve progress in our [JOBAREA], the collaboration of highly experienced professionals like [MIDDLENAME] is indispensable. We aim to build better higher education policies for [STATE] university.",
+        "privacy_mask": [
+            {
+                "value": "Solutions",
+                "start": 27,
+                "end": 36,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "River",
+                "start": 97,
+                "end": 102,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Thuringia",
+                "start": 174,
+                "end": 183,
+                "label": "STATE"
+            }
+        ]
+    },
+    {
+        "input": "Hello Horace, we have detected a multiple withdrawal from your account number 89182339 totaling to $366379.80. Please confirm immediately.",
+        "output": "Hello [FIRSTNAME], we have detected a multiple withdrawal from your account number [ACCOUNTNUMBER] totaling to [CURRENCYSYMBOL][AMOUNT]. Please confirm immediately.",
+        "privacy_mask": [
+            {
+                "value": "Horace",
+                "start": 6,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "89182339",
+                "start": 78,
+                "end": 86,
+                "label": "ACCOUNTNUMBER"
+            },
+            {
+                "value": "$",
+                "start": 99,
+                "end": 100,
+                "label": "CURRENCYSYMBOL"
+            },
+            {
+                "value": "366379.80",
+                "start": 100,
+                "end": 109,
+                "label": "AMOUNT"
+            }
+        ]
+    },
+    {
+        "input": "Patient Neutrois has made a payment via Bitcoin address 3Du44vQRRX5L7RhX4FE4hRgRXKDoYixp for an upcoming surgical procedure. Please update the records.",
+        "output": "Patient [GENDER] has made a payment via Bitcoin address [BITCOINADDRESS] for an upcoming surgical procedure. Please update the records.",
+        "privacy_mask": [
+            {
+                "value": "Neutrois",
+                "start": 8,
+                "end": 16,
+                "label": "GENDER"
+            },
+            {
+                "value": "3Du44vQRRX5L7RhX4FE4hRgRXKDoYixp",
+                "start": 56,
+                "end": 88,
+                "label": "BITCOINADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Observe caution: Discrepancies found in BIC numbers from vendors. Gabrielle_Barrows59, validate RRYCADQSXXX.",
+        "output": "Observe caution: Discrepancies found in BIC numbers from vendors. [USERNAME], validate [BIC].",
+        "privacy_mask": [
+            {
+                "value": "Gabrielle_Barrows59",
+                "start": 66,
+                "end": 85,
+                "label": "USERNAME"
+            },
+            {
+                "value": "RRYCADQSXXX",
+                "start": 96,
+                "end": 107,
+                "label": "BIC"
+            }
+        ]
+    },
+    {
+        "input": "Rickey, your Distance Learning subscription payment is due. Your bank details AZ89QCAE78003048089030840072 and ZRCLPARB from your last payment are showing as invalid. Please update them.",
+        "output": "[FIRSTNAME], your Distance Learning subscription payment is due. Your bank details [IBAN] and [BIC] from your last payment are showing as invalid. Please update them.",
+        "privacy_mask": [
+            {
+                "value": "Rickey",
+                "start": 0,
+                "end": 6,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "AZ89QCAE78003048089030840072",
+                "start": 78,
+                "end": 106,
+                "label": "IBAN"
+            },
+            {
+                "value": "ZRCLPARB",
+                "start": 111,
+                "end": 119,
+                "label": "BIC"
+            }
+        ]
+    },
+    {
+        "input": "For international employees, update the payroll details, replacing the previous Yen with the current code KMF.",
+        "output": "For international employees, update the payroll details, replacing the previous [CURRENCY] with the current code [CURRENCYCODE].",
+        "privacy_mask": [
+            {
+                "value": "Yen",
+                "start": 80,
+                "end": 83,
+                "label": "CURRENCY"
+            },
+            {
+                "value": "KMF",
+                "start": 106,
+                "end": 109,
+                "label": "CURRENCYCODE"
+            }
+        ]
+    },
+    {
+        "input": "The mobile vaccination unit with the number VK13XEQ will be covering the 60265 area. Please keep an eye out.",
+        "output": "The mobile vaccination unit with the number [VEHICLEVRM] will be covering the [ZIPCODE] area. Please keep an eye out.",
+        "privacy_mask": [
+            {
+                "value": "VK13XEQ",
+                "start": 44,
+                "end": 51,
+                "label": "VEHICLEVRM"
+            },
+            {
+                "value": "60265",
+                "start": 73,
+                "end": 78,
+                "label": "ZIPCODE"
+            }
+        ]
+    },
+    {
+        "input": "We need to compare financial performance for this period to the prior year. Can you prepare the data? Our main points of concern are losses/gains in Kuwaiti Dinar. Consider every transaction involving account 22638409.",
+        "output": "We need to compare financial performance for this period to the prior year. Can you prepare the data? Our main points of concern are losses/gains in [CURRENCYNAME]. Consider every transaction involving account [ACCOUNTNUMBER].",
+        "privacy_mask": [
+            {
+                "value": "Kuwaiti Dinar",
+                "start": 149,
+                "end": 162,
+                "label": "CURRENCYNAME"
+            },
+            {
+                "value": "22638409",
+                "start": 209,
+                "end": 217,
+                "label": "ACCOUNTNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "The ethics review meeting has been postponed from today's 6:15am slot to post-lunch. The PIN for the meeting room is 2552.",
+        "output": "The ethics review meeting has been postponed from today's [TIME] slot to post-lunch. The PIN for the meeting room is [PIN].",
+        "privacy_mask": [
+            {
+                "value": "6:15am",
+                "start": 58,
+                "end": 64,
+                "label": "TIME"
+            },
+            {
+                "value": "2552",
+                "start": 117,
+                "end": 121,
+                "label": "PIN"
+            }
+        ]
+    },
+    {
+        "input": "We strive to provide quality healthcare for all. Your contributions via Money Market Account 66608784 can make a difference.",
+        "output": "We strive to provide quality healthcare for all. Your contributions via [ACCOUNTNAME] [ACCOUNTNUMBER] can make a difference.",
+        "privacy_mask": [
+            {
+                "value": "Money Market Account",
+                "start": 72,
+                "end": 92,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "66608784",
+                "start": 93,
+                "end": 101,
+                "label": "ACCOUNTNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Hi Lavern, we might need some more financial details in the upcoming days. Is 426,229.63 Dobra still the fixed amount intended for child support?",
+        "output": "Hi [FIRSTNAME], we might need some more financial details in the upcoming days. Is [AMOUNT] [CURRENCY] still the fixed amount intended for child support?",
+        "privacy_mask": [
+            {
+                "value": "Lavern",
+                "start": 3,
+                "end": 9,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "426,229.63",
+                "start": 78,
+                "end": 88,
+                "label": "AMOUNT"
+            },
+            {
+                "value": "Dobra",
+                "start": 89,
+                "end": 94,
+                "label": "CURRENCY"
+            }
+        ]
+    },
+    {
+        "input": "Working on financial analysis for Tremblay, Stiedemann and Beatty. I'll need Valentine29 's input, please forward to their email.",
+        "output": "Working on financial analysis for [COMPANYNAME]. I'll need [USERNAME] 's input, please forward to their email.",
+        "privacy_mask": [
+            {
+                "value": "Tremblay, Stiedemann and Beatty",
+                "start": 34,
+                "end": 65,
+                "label": "COMPANYNAME"
+            },
+            {
+                "value": "Valentine29",
+                "start": 77,
+                "end": 88,
+                "label": "USERNAME"
+            }
+        ]
+    },
+    {
+        "input": "Our tech team has developed an automated system that consolidates job areas including Operations. Please verify some info including Female, 26/09/1943, and Brown.",
+        "output": "Our tech team has developed an automated system that consolidates job areas including [JOBAREA]. Please verify some info including [SEX], [DOB], and [EYECOLOR].",
+        "privacy_mask": [
+            {
+                "value": "Operations",
+                "start": 86,
+                "end": 96,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "Female",
+                "start": 132,
+                "end": 138,
+                "label": "SEX"
+            },
+            {
+                "value": "26/09/1943",
+                "start": 140,
+                "end": 150,
+                "label": "DOB"
+            },
+            {
+                "value": "Brown",
+                "start": 156,
+                "end": 161,
+                "label": "EYECOLOR"
+            }
+        ]
+    },
+    {
+        "input": "Hi, we've noticed a series of unsuccessful login attempts using Mozilla/5.0 (Windows; U; Windows NT 6.1)AppleWebKit/534.2.0 (KHTML, like Gecko) Version/5.0.5 Safari/534.2.0 for your Auto Loan Account. We highly suggest modifying your 0pCLOYf0mLfv to prevent unauthorized access.",
+        "output": "Hi, we've noticed a series of unsuccessful login attempts using [USERAGENT] for your [ACCOUNTNAME]. We highly suggest modifying your [PASSWORD] to prevent unauthorized access.",
+        "privacy_mask": [
+            {
+                "value": "Mozilla/5.0 (Windows; U; Windows NT 6.1)AppleWebKit/534.2.0 (KHTML, like Gecko) Version/5.0.5 Safari/534.2.0",
+                "start": 64,
+                "end": 172,
+                "label": "USERAGENT"
+            },
+            {
+                "value": "Auto Loan Account",
+                "start": 182,
+                "end": 199,
+                "label": "ACCOUNTNAME"
+            },
+            {
+                "value": "0pCLOYf0mLfv",
+                "start": 234,
+                "end": 246,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "In our last session, Tara expressed mixed feelings about their Female to male trans man identity. I propose a professional meeting to help them navigate through these emotions.",
+        "output": "In our last session, [FIRSTNAME] expressed mixed feelings about their [GENDER] identity. I propose a professional meeting to help them navigate through these emotions.",
+        "privacy_mask": [
+            {
+                "value": "Tara",
+                "start": 21,
+                "end": 25,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Female to male trans man",
+                "start": 63,
+                "end": 87,
+                "label": "GENDER"
+            }
+        ]
+    },
+    {
+        "input": "Want to join Stracke, Mann and Ernser's field trip on 30th November? Contact Blair_Schoen99.",
+        "output": "Want to join [COMPANYNAME]'s field trip on [DATE]? Contact [USERNAME].",
+        "privacy_mask": [
+            {
+                "value": "Stracke, Mann and Ernser",
+                "start": 13,
+                "end": 37,
+                "label": "COMPANYNAME"
+            },
+            {
+                "value": "30th November",
+                "start": 54,
+                "end": 67,
+                "label": "DATE"
+            },
+            {
+                "value": "Blair_Schoen99",
+                "start": 77,
+                "end": 91,
+                "label": "USERNAME"
+            }
+        ]
+    },
+    {
+        "input": "How are you Clair? Quick update, our Pediatric Care unit will be under maintenance today. Will update once done. You may contact 2212652818597951 for inquiries.",
+        "output": "How are you [FIRSTNAME]? Quick update, our Pediatric Care unit will be under maintenance today. Will update once done. You may contact [MASKEDNUMBER] for inquiries.",
+        "privacy_mask": [
+            {
+                "value": "Clair",
+                "start": 12,
+                "end": 17,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "2212652818597951",
+                "start": 129,
+                "end": 145,
+                "label": "MASKEDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Online security is crucial, so never share your 2113610009277549 or 476 online.",
+        "output": "Online security is crucial, so never share your [CREDITCARDNUMBER] or [CREDITCARDCVV] online.",
+        "privacy_mask": [
+            {
+                "value": "2113610009277549",
+                "start": 48,
+                "end": 64,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "476",
+                "start": 68,
+                "end": 71,
+                "label": "CREDITCARDCVV"
+            }
+        ]
+    },
+    {
+        "input": "Dear General, your appointment to lead consultant position for city's Public Health Initiatives is confirmed. Reach Apt. 719 at 16/06/1941 for initial meet up to discuss roadmap.",
+        "output": "Dear [FIRSTNAME], your appointment to lead consultant position for city's Public Health Initiatives is confirmed. Reach [SECONDARYADDRESS] at [DOB] for initial meet up to discuss roadmap.",
+        "privacy_mask": [
+            {
+                "value": "General",
+                "start": 5,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Apt. 719",
+                "start": 116,
+                "end": 124,
+                "label": "SECONDARYADDRESS"
+            },
+            {
+                "value": "16/06/1941",
+                "start": 128,
+                "end": 138,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Our patient safety officer is Laisha Conroy, reachable at 03645 61601. He's been working on upcoming safety measures.",
+        "output": "Our patient safety officer is [FIRSTNAME] [LASTNAME], reachable at [PHONENUMBER]. He's been working on upcoming safety measures.",
+        "privacy_mask": [
+            {
+                "value": "Laisha",
+                "start": 30,
+                "end": 36,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Conroy",
+                "start": 37,
+                "end": 43,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "03645 61601",
+                "start": 58,
+                "end": 69,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Hi Shyanne, would it be possible for you to come in at 4:57 AM tomorrow? We need your expertise in the Research for some tests related to our new Medical Imaging project.",
+        "output": "Hi [FIRSTNAME], would it be possible for you to come in at [TIME] tomorrow? We need your expertise in the [JOBAREA] for some tests related to our new Medical Imaging project.",
+        "privacy_mask": [
+            {
+                "value": "Shyanne",
+                "start": 3,
+                "end": 10,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "4:57 AM",
+                "start": 55,
+                "end": 62,
+                "label": "TIME"
+            },
+            {
+                "value": "Research",
+                "start": 103,
+                "end": 111,
+                "label": "JOBAREA"
+            }
+        ]
+    },
+    {
+        "input": "Our cost system reported suspicious activity via jcb. As the Coordinator, can Dedric_Brakus90 verify these transactions to ensure cost efficacy?",
+        "output": "Our cost system reported suspicious activity via [CREDITCARDISSUER]. As the [JOBTYPE], can [USERNAME] verify these transactions to ensure cost efficacy?",
+        "privacy_mask": [
+            {
+                "value": "jcb",
+                "start": 49,
+                "end": 52,
+                "label": "CREDITCARDISSUER"
+            },
+            {
+                "value": "Coordinator",
+                "start": 61,
+                "end": 72,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "Dedric_Brakus90",
+                "start": 78,
+                "end": 93,
+                "label": "USERNAME"
+            }
+        ]
+    },
+    {
+        "input": "Child lost in our Early Childhood event found near the Northwest side area. Can anyone recognize him/her by Eye color: Brown?",
+        "output": "Child lost in our Early Childhood event found near the [ORDINALDIRECTION] side area. Can anyone recognize him/her by [EYECOLOR]?",
+        "privacy_mask": [
+            {
+                "value": "Northwest",
+                "start": 55,
+                "end": 64,
+                "label": "ORDINALDIRECTION"
+            },
+            {
+                "value": "Eye color: Brown",
+                "start": 108,
+                "end": 124,
+                "label": "EYECOLOR"
+            }
+        ]
+    },
+    {
+        "input": "\"Our credit card 1801000776467728 has been exposed on the internet. Please contact jcb and ask for a new one immediately. In the meantime, we cannot continue with any operations involving this card.\"",
+        "output": "\"Our credit card [CREDITCARDNUMBER] has been exposed on the internet. Please contact [CREDITCARDISSUER] and ask for a new one immediately. In the meantime, we cannot continue with any operations involving this card.\"",
+        "privacy_mask": [
+            {
+                "value": "1801000776467728",
+                "start": 17,
+                "end": 33,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "jcb",
+                "start": 83,
+                "end": 86,
+                "label": "CREDITCARDISSUER"
+            }
+        ]
+    },
+    {
+        "input": "Dana Kennedy Okuneva, We'd like to commend you on your excellent work in healthcare in Tyreestead. The improvements have been remarkable.",
+        "output": "[FIRSTNAME] [MIDDLENAME] [LASTNAME], We'd like to commend you on your excellent work in healthcare in [CITY]. The improvements have been remarkable.",
+        "privacy_mask": [
+            {
+                "value": "Dana",
+                "start": 0,
+                "end": 4,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Kennedy",
+                "start": 5,
+                "end": 12,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "Okuneva",
+                "start": 13,
+                "end": 20,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "Tyreestead",
+                "start": 87,
+                "end": 97,
+                "label": "CITY"
+            }
+        ]
+    },
+    {
+        "input": "Our education reform policies comply with the standards of Langoshburgh. Please access files on bddd:8cbe:b6f0:2dce:ecbc:b26c:f3cd:7ca5 with the protection of eY3E5oF1Pbqj.",
+        "output": "Our education reform policies comply with the standards of [CITY]. Please access files on [IP] with the protection of [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "Langoshburgh",
+                "start": 59,
+                "end": 71,
+                "label": "CITY"
+            },
+            {
+                "value": "bddd:8cbe:b6f0:2dce:ecbc:b26c:f3cd:7ca5",
+                "start": 96,
+                "end": 135,
+                "label": "IP"
+            },
+            {
+                "value": "eY3E5oF1Pbqj",
+                "start": 159,
+                "end": 171,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Could you please check the legality and possible implications of an online purchase made with a suspicious credit card number 7568965168107113? The card is issued by american_express and we're currently unsure if this involves any cross-border regulations.",
+        "output": "Could you please check the legality and possible implications of an online purchase made with a suspicious credit card number [CREDITCARDNUMBER]? The card is issued by [CREDITCARDISSUER] and we're currently unsure if this involves any cross-border regulations.",
+        "privacy_mask": [
+            {
+                "value": "7568965168107113",
+                "start": 126,
+                "end": 142,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "american_express",
+                "start": 166,
+                "end": 182,
+                "label": "CREDITCARDISSUER"
+            }
+        ]
+    },
+    {
+        "input": "Hello Queenie, we will be hosting a preventive medicine seminar at building 74425 in the Southeast wing. Would love to have you there!",
+        "output": "Hello [FIRSTNAME], we will be hosting a preventive medicine seminar at building [BUILDINGNUMBER] in the [ORDINALDIRECTION] wing. Would love to have you there!",
+        "privacy_mask": [
+            {
+                "value": "Queenie",
+                "start": 6,
+                "end": 13,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "74425",
+                "start": 76,
+                "end": 81,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Southeast",
+                "start": 89,
+                "end": 98,
+                "label": "ORDINALDIRECTION"
+            }
+        ]
+    },
+    {
+        "input": "Our research conclusions show potential. Suggest target audience should be Male, with 3 feet 1 inches. Marketing team, kindly note.",
+        "output": "Our research conclusions show potential. Suggest target audience should be [SEX], with [HEIGHT]. Marketing team, kindly note.",
+        "privacy_mask": [
+            {
+                "value": "Male",
+                "start": 75,
+                "end": 79,
+                "label": "SEX"
+            },
+            {
+                "value": "3 feet 1 inches",
+                "start": 86,
+                "end": 101,
+                "label": "HEIGHT"
+            }
+        ]
+    },
+    {
+        "input": "Finally! Final charges for 82928 ICU stay for patient Cisgender male, DOB 1934-07-10T17:04:50.576Z, SSN 756.5906.7047, being ман BHD. Payment will be debited from mastercard card 9897824481027537.",
+        "output": "Finally! Final charges for [BUILDINGNUMBER] ICU stay for patient [GENDER], DOB [DOB], SSN [SSN], being [CURRENCYSYMBOL] [CURRENCYCODE]. Payment will be debited from [CREDITCARDISSUER] card [MASKEDNUMBER].",
+        "privacy_mask": [
+            {
+                "value": "82928",
+                "start": 27,
+                "end": 32,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Cisgender male",
+                "start": 54,
+                "end": 68,
+                "label": "GENDER"
+            },
+            {
+                "value": "1934-07-10T17:04:50.576Z",
+                "start": 74,
+                "end": 98,
+                "label": "DOB"
+            },
+            {
+                "value": "756.5906.7047",
+                "start": 104,
+                "end": 117,
+                "label": "SSN"
+            },
+            {
+                "value": "ман",
+                "start": 125,
+                "end": 128,
+                "label": "CURRENCYSYMBOL"
+            },
+            {
+                "value": "BHD",
+                "start": 129,
+                "end": 132,
+                "label": "CURRENCYCODE"
+            },
+            {
+                "value": "mastercard",
+                "start": 163,
+                "end": 173,
+                "label": "CREDITCARDISSUER"
+            },
+            {
+                "value": "9897824481027537",
+                "start": 179,
+                "end": 195,
+                "label": "MASKEDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Male Lesley.Labadie15, 42, displays signs of possible schizoid personality disorder in recent psychological assessment.",
+        "output": "[SEX] [USERNAME], [AGE], displays signs of possible schizoid personality disorder in recent psychological assessment.",
+        "privacy_mask": [
+            {
+                "value": "Male",
+                "start": 0,
+                "end": 4,
+                "label": "SEX"
+            },
+            {
+                "value": "Lesley.Labadie15",
+                "start": 5,
+                "end": 21,
+                "label": "USERNAME"
+            },
+            {
+                "value": "42",
+                "start": 23,
+                "end": 25,
+                "label": "AGE"
+            }
+        ]
+    },
+    {
+        "input": "In our pursuit of improving patient care, we're analyzing MAC Addresses associated with our IoT devices. The MAC address 2b:ff:07:7a:c1:71 maps to the IoT device installed at your home in Aufderharcester. Please ensure it stays powered on for automated health checks.",
+        "output": "In our pursuit of improving patient care, we're analyzing MAC Addresses associated with our IoT devices. The MAC address [MAC] maps to the IoT device installed at your home in [CITY]. Please ensure it stays powered on for automated health checks.",
+        "privacy_mask": [
+            {
+                "value": "2b:ff:07:7a:c1:71",
+                "start": 121,
+                "end": 138,
+                "label": "MAC"
+            },
+            {
+                "value": "Aufderharcester",
+                "start": 188,
+                "end": 203,
+                "label": "CITY"
+            }
+        ]
+    },
+    {
+        "input": "Gabriella Rory, hope you're doing well. Based on your recent tests, we recommend a follow up.",
+        "output": "[FIRSTNAME] [MIDDLENAME], hope you're doing well. Based on your recent tests, we recommend a follow up.",
+        "privacy_mask": [
+            {
+                "value": "Gabriella",
+                "start": 0,
+                "end": 9,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Rory",
+                "start": 10,
+                "end": 14,
+                "label": "MIDDLENAME"
+            }
+        ]
+    },
+    {
+        "input": "Hi, I am unable to proceed with education course payment. My mastercard card number 0989797301804829 keeps getting declined.",
+        "output": "Hi, I am unable to proceed with education course payment. My [CREDITCARDISSUER] card number [CREDITCARDNUMBER] keeps getting declined.",
+        "privacy_mask": [
+            {
+                "value": "mastercard",
+                "start": 61,
+                "end": 71,
+                "label": "CREDITCARDISSUER"
+            },
+            {
+                "value": "0989797301804829",
+                "start": 84,
+                "end": 100,
+                "label": "CREDITCARDNUMBER"
+            }
+        ]
+    },
+    {
+        "input": "Hello Miss, we've noticed a failed login attempt into your online account registered to email Dayne.Lehner61@gmail.com. If this was not you, we highly recommend you change your password: _jUQi_bYNT8h. Please contact our support service if you require assistance.",
+        "output": "Hello [PREFIX], we've noticed a failed login attempt into your online account registered to email [EMAIL]. If this was not you, we highly recommend you change your password: [PASSWORD]. Please contact our support service if you require assistance.",
+        "privacy_mask": [
+            {
+                "value": "Miss",
+                "start": 6,
+                "end": 10,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Dayne.Lehner61@gmail.com",
+                "start": 94,
+                "end": 118,
+                "label": "EMAIL"
+            },
+            {
+                "value": "_jUQi_bYNT8h",
+                "start": 187,
+                "end": 199,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "Working with North East England schools to improve nutrition. Need surveys completed by 1915-02-03T23:23:50.850Z for best planning.",
+        "output": "Working with [STATE] schools to improve nutrition. Need surveys completed by [DOB] for best planning.",
+        "privacy_mask": [
+            {
+                "value": "North East England",
+                "start": 13,
+                "end": 31,
+                "label": "STATE"
+            },
+            {
+                "value": "1915-02-03T23:23:50.850Z",
+                "start": 88,
+                "end": 112,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "The newly installed classroom evaluation on 188.151.86.0 is proving to be quite responsive for students in Interactions. Tihs could revolutionize web-based teaching.",
+        "output": "The newly installed classroom evaluation on [IPV4] is proving to be quite responsive for students in [JOBAREA]. Tihs could revolutionize web-based teaching.",
+        "privacy_mask": [
+            {
+                "value": "188.151.86.0",
+                "start": 44,
+                "end": 56,
+                "label": "IPV4"
+            },
+            {
+                "value": "Interactions",
+                "start": 107,
+                "end": 119,
+                "label": "JOBAREA"
+            }
+        ]
+    },
+    {
+        "input": "Our address for new STEM program is 8388 Gusikowski Spurs in Liguria, 49553-9884. For more information, contact us on 80-504691-718492-1.",
+        "output": "Our address for new STEM program is [BUILDINGNUMBER] [STREET] in [STATE], [ZIPCODE]. For more information, contact us on [PHONEIMEI].",
+        "privacy_mask": [
+            {
+                "value": "8388",
+                "start": 36,
+                "end": 40,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Gusikowski Spurs",
+                "start": 41,
+                "end": 57,
+                "label": "STREET"
+            },
+            {
+                "value": "Liguria",
+                "start": 61,
+                "end": 68,
+                "label": "STATE"
+            },
+            {
+                "value": "49553-9884",
+                "start": 70,
+                "end": 80,
+                "label": "ZIPCODE"
+            },
+            {
+                "value": "80-504691-718492-1",
+                "start": 118,
+                "end": 136,
+                "label": "PHONEIMEI"
+            }
+        ]
+    },
+    {
+        "input": "Dear Danyka, As part of our continuous improvement programme, we kindly request your feedback for our teacher evaluations. Your wealth of experience in Directives is vital for our cohesive evaluation. Access the form via the link provided, reached via 100.152.219.153 with i797V2n4_2FB.",
+        "output": "Dear [FIRSTNAME], As part of our continuous improvement programme, we kindly request your feedback for our teacher evaluations. Your wealth of experience in [JOBAREA] is vital for our cohesive evaluation. Access the form via the link provided, reached via [IP] with [PASSWORD].",
+        "privacy_mask": [
+            {
+                "value": "Danyka",
+                "start": 5,
+                "end": 11,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Directives",
+                "start": 152,
+                "end": 162,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "100.152.219.153",
+                "start": 252,
+                "end": 267,
+                "label": "IP"
+            },
+            {
+                "value": "i797V2n4_2FB",
+                "start": 273,
+                "end": 285,
+                "label": "PASSWORD"
+            }
+        ]
+    },
+    {
+        "input": "For the Operations subject, Lonie Hegmann's teaching method is appreciated by all students. Faculty's views are also positive. Good job!",
+        "output": "For the [JOBAREA] subject, [FIRSTNAME] [LASTNAME]'s teaching method is appreciated by all students. Faculty's views are also positive. Good job!",
+        "privacy_mask": [
+            {
+                "value": "Operations",
+                "start": 8,
+                "end": 18,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "Lonie",
+                "start": 28,
+                "end": 33,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Hegmann",
+                "start": 34,
+                "end": 41,
+                "label": "LASTNAME"
+            }
+        ]
+    },
+    {
+        "input": "Unfortunately, Britney_Sawayn57's grades are declining. In response to this, we will need to have a meeting with Ms. Donnelly. I'll set up a time with them via 079-491 0150.",
+        "output": "Unfortunately, [USERNAME]'s grades are declining. In response to this, we will need to have a meeting with [PREFIX] [LASTNAME]. I'll set up a time with them via [PHONENUMBER].",
+        "privacy_mask": [
+            {
+                "value": "Britney_Sawayn57",
+                "start": 15,
+                "end": 31,
+                "label": "USERNAME"
+            },
+            {
+                "value": "Ms.",
+                "start": 113,
+                "end": 116,
+                "label": "PREFIX"
+            },
+            {
+                "value": "Donnelly",
+                "start": 117,
+                "end": 125,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "079-491 0150",
+                "start": 160,
+                "end": 172,
+                "label": "PHONENUMBER"
+            }
+        ]
+    },
+    {
+        "input": "\"The school's new security system is enabled at Southeast gate in 7706 Apt. 555.\"",
+        "output": "\"The school's new security system is enabled at [ORDINALDIRECTION] gate in [BUILDINGNUMBER] [SECONDARYADDRESS].\"",
+        "privacy_mask": [
+            {
+                "value": "Southeast",
+                "start": 48,
+                "end": 57,
+                "label": "ORDINALDIRECTION"
+            },
+            {
+                "value": "7706",
+                "start": 66,
+                "end": 70,
+                "label": "BUILDINGNUMBER"
+            },
+            {
+                "value": "Apt. 555",
+                "start": 71,
+                "end": 79,
+                "label": "SECONDARYADDRESS"
+            }
+        ]
+    },
+    {
+        "input": "Thank you took primary care consultation Raphaelle. Please confirm payment method via BGN.",
+        "output": "Thank you took primary care consultation [FIRSTNAME]. Please confirm payment method via [CURRENCYCODE].",
+        "privacy_mask": [
+            {
+                "value": "Raphaelle",
+                "start": 41,
+                "end": 50,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "BGN",
+                "start": 86,
+                "end": 89,
+                "label": "CURRENCYCODE"
+            }
+        ]
+    },
+    {
+        "input": "Please help us investigate any fraudulent activity associated with the 3607095338790401 issued by american_express with CVV 847.",
+        "output": "Please help us investigate any fraudulent activity associated with the [CREDITCARDNUMBER] issued by [CREDITCARDISSUER] with CVV [CREDITCARDCVV].",
+        "privacy_mask": [
+            {
+                "value": "3607095338790401",
+                "start": 71,
+                "end": 87,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "american_express",
+                "start": 98,
+                "end": 114,
+                "label": "CREDITCARDISSUER"
+            },
+            {
+                "value": "847",
+                "start": 124,
+                "end": 127,
+                "label": "CREDITCARDCVV"
+            }
+        ]
+    },
+    {
+        "input": "Hi Austyn, we need you to cross-reference the list of policyholders with unusual claim request patterns in the past year. Use the last access IP (194.118.155.148) and timestamps from their data and check for any correlation. Thanks for your help on this, it's key to staying ahead in the insurance game!",
+        "output": "Hi [FIRSTNAME], we need you to cross-reference the list of policyholders with unusual claim request patterns in the past year. Use the last access IP ([IPV4]) and timestamps from their data and check for any correlation. Thanks for your help on this, it's key to staying ahead in the insurance game!",
+        "privacy_mask": [
+            {
+                "value": "Austyn",
+                "start": 3,
+                "end": 9,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "194.118.155.148",
+                "start": 146,
+                "end": 161,
+                "label": "IPV4"
+            }
+        ]
+    },
+    {
+        "input": "Payment for the medical conference will be processed by discover, using card number 9037705585627479. Please verify with the BIC code RRBDZAQZ.",
+        "output": "Payment for the medical conference will be processed by [CREDITCARDISSUER], using card number [CREDITCARDNUMBER]. Please verify with the BIC code [BIC].",
+        "privacy_mask": [
+            {
+                "value": "discover",
+                "start": 56,
+                "end": 64,
+                "label": "CREDITCARDISSUER"
+            },
+            {
+                "value": "9037705585627479",
+                "start": 84,
+                "end": 100,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "RRBDZAQZ",
+                "start": 134,
+                "end": 142,
+                "label": "BIC"
+            }
+        ]
+    },
+    {
+        "input": "Exciting news for Supervisor students in Northumberland. We are releasing a new advanced version of our curriculum this summer. Access is possible with accounts such as Auto Loan Account.",
+        "output": "Exciting news for [JOBTYPE] students in [COUNTY]. We are releasing a new advanced version of our curriculum this summer. Access is possible with accounts such as [ACCOUNTNAME].",
+        "privacy_mask": [
+            {
+                "value": "Supervisor",
+                "start": 18,
+                "end": 28,
+                "label": "JOBTYPE"
+            },
+            {
+                "value": "Northumberland",
+                "start": 41,
+                "end": 55,
+                "label": "COUNTY"
+            },
+            {
+                "value": "Auto Loan Account",
+                "start": 169,
+                "end": 186,
+                "label": "ACCOUNTNAME"
+            }
+        ]
+    },
+    {
+        "input": "We are going to focus on Surrey in the Northwest running into the Auvergne-Rhône-Alpes. The project will be led by Hillary.Kuvalis41 who will be collaborating with Rempel, Rogahn and Stamm.",
+        "output": "We are going to focus on [COUNTY] in the [ORDINALDIRECTION] running into the [STATE]. The project will be led by [USERNAME] who will be collaborating with [COMPANYNAME].",
+        "privacy_mask": [
+            {
+                "value": "Surrey",
+                "start": 25,
+                "end": 31,
+                "label": "COUNTY"
+            },
+            {
+                "value": "Northwest",
+                "start": 39,
+                "end": 48,
+                "label": "ORDINALDIRECTION"
+            },
+            {
+                "value": "Auvergne-Rhône-Alpes",
+                "start": 66,
+                "end": 86,
+                "label": "STATE"
+            },
+            {
+                "value": "Hillary.Kuvalis41",
+                "start": 115,
+                "end": 132,
+                "label": "USERNAME"
+            },
+            {
+                "value": "Rempel, Rogahn and Stamm",
+                "start": 164,
+                "end": 188,
+                "label": "COMPANYNAME"
+            }
+        ]
+    },
+    {
+        "input": "Dear Zulauf, we implemented some changes to improve student wellbeing. Details have been sent to Arvid.Leffler@yahoo.com. I'd also like to discuss ways we can ensure safe internet use in school, especially considering https://limp-peer.org and https://cheap-wallaby.net as resources. - Ivah",
+        "output": "Dear [LASTNAME], we implemented some changes to improve student wellbeing. Details have been sent to [EMAIL]. I'd also like to discuss ways we can ensure safe internet use in school, especially considering [URL] and [URL] as resources. - [FIRSTNAME]",
+        "privacy_mask": [
+            {
+                "value": "Zulauf",
+                "start": 5,
+                "end": 11,
+                "label": "LASTNAME"
+            },
+            {
+                "value": "Arvid.Leffler@yahoo.com",
+                "start": 97,
+                "end": 120,
+                "label": "EMAIL"
+            },
+            {
+                "value": "https://limp-peer.org",
+                "start": 218,
+                "end": 239,
+                "label": "URL"
+            },
+            {
+                "value": "https://cheap-wallaby.net",
+                "start": 244,
+                "end": 269,
+                "label": "URL"
+            },
+            {
+                "value": "Ivah",
+                "start": 286,
+                "end": 290,
+                "label": "FIRSTNAME"
+            }
+        ]
+    },
+    {
+        "input": "Hey Reese, we've some tech to test around coordinates [-81.3398,175.5798], note down XS78UTG for transportation.",
+        "output": "Hey [MIDDLENAME], we've some tech to test around coordinates [NEARBYGPSCOORDINATE], note down [VEHICLEVRM] for transportation.",
+        "privacy_mask": [
+            {
+                "value": "Reese",
+                "start": 4,
+                "end": 9,
+                "label": "MIDDLENAME"
+            },
+            {
+                "value": "[-81.3398,175.5798]",
+                "start": 54,
+                "end": 73,
+                "label": "NEARBYGPSCOORDINATE"
+            },
+            {
+                "value": "XS78UTG",
+                "start": 85,
+                "end": 92,
+                "label": "VEHICLEVRM"
+            }
+        ]
+    },
+    {
+        "input": "Looking for Dr. Davon, our records from July 15, 1930 show a scheduled chest X-ray due today. Could you confirm if patient from 76799 has already arrived?",
+        "output": "Looking for Dr. [FIRSTNAME], our records from [DOB] show a scheduled chest X-ray due today. Could you confirm if patient from [ZIPCODE] has already arrived?",
+        "privacy_mask": [
+            {
+                "value": "Davon",
+                "start": 16,
+                "end": 21,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "July 15, 1930",
+                "start": 40,
+                "end": 53,
+                "label": "DOB"
+            },
+            {
+                "value": "76799",
+                "start": 128,
+                "end": 133,
+                "label": "ZIPCODE"
+            }
+        ]
+    },
+    {
+        "input": "Dear Lonzo, we've noticed unusual activity with your gifted education account on your IP 149.249.230.122. Please ensure your credentials remain safe.",
+        "output": "Dear [FIRSTNAME], we've noticed unusual activity with your gifted education account on your IP [IP]. Please ensure your credentials remain safe.",
+        "privacy_mask": [
+            {
+                "value": "Lonzo",
+                "start": 5,
+                "end": 10,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "149.249.230.122",
+                "start": 89,
+                "end": 104,
+                "label": "IP"
+            }
+        ]
+    },
+    {
+        "input": "Our Direct Interactions Liaison at Friesenstead is responsible for conceptualizing and implementing holistic education guidelines.",
+        "output": "Our [JOBTITLE] at [CITY] is responsible for conceptualizing and implementing holistic education guidelines.",
+        "privacy_mask": [
+            {
+                "value": "Direct Interactions Liaison",
+                "start": 4,
+                "end": 31,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "Friesenstead",
+                "start": 35,
+                "end": 47,
+                "label": "CITY"
+            }
+        ]
+    },
+    {
+        "input": "The oncology department has now enabled the use of digital currencies. Transaction confirmations can be verified using LHCFVhtMbGrkbMZZfQ9QMURneCRr4Eor 0x99cebd1eacde1c3ee8d5af2a2b7e3d3bc4a0fe88. Our Principal Web ProducerRyan can assist in the process.",
+        "output": "The oncology department has now enabled the use of digital currencies. Transaction confirmations can be verified using [LITECOINADDRESS]or [ETHEREUMADDRESS]. Our [JOBTITLE][MIDDLENAME] can assist in the process.",
+        "privacy_mask": [
+            {
+                "value": "LHCFVhtMbGrkbMZZfQ9QMURneCRr4E",
+                "start": 119,
+                "end": 149,
+                "label": "LITECOINADDRESS"
+            },
+            {
+                "value": "0x99cebd1eacde1c3ee8d5af2a2b7e3d3bc4a0fe88",
+                "start": 152,
+                "end": 194,
+                "label": "ETHEREUMADDRESS"
+            },
+            {
+                "value": "Principal Web Producer",
+                "start": 200,
+                "end": 222,
+                "label": "JOBTITLE"
+            },
+            {
+                "value": "Ryan",
+                "start": 222,
+                "end": 226,
+                "label": "MIDDLENAME"
+            }
+        ]
+    },
+    {
+        "input": "I seek legal consultation for Constitutional Law concerns, specifically within the Tactics. I'd appreciate your assistance, as a professional Customer Security Developer. Please let me know the convenient time and your IPv4 address for commencing the virtual call?",
+        "output": "I seek legal consultation for Constitutional Law concerns, specifically within the [JOBAREA]. I'd appreciate your assistance, as a professional [JOBTITLE]. Please let me know the convenient time and your IPv4 address for commencing the virtual call?",
+        "privacy_mask": [
+            {
+                "value": "Tactics",
+                "start": 83,
+                "end": 90,
+                "label": "JOBAREA"
+            },
+            {
+                "value": "Customer Security Developer",
+                "start": 142,
+                "end": 169,
+                "label": "JOBTITLE"
+            }
+        ]
+    },
+    {
+        "input": "This is a kind reminder for your appointment on 11/03/1920. Please provide your SSN132-65-3444 for identification.",
+        "output": "This is a kind reminder for your appointment on [DOB]. Please provide your SSN[SSN] for identification.",
+        "privacy_mask": [
+            {
+                "value": "11/03/1920",
+                "start": 48,
+                "end": 58,
+                "label": "DOB"
+            },
+            {
+                "value": "132-65-3444",
+                "start": 83,
+                "end": 94,
+                "label": "SSN"
+            }
+        ]
+    },
+    {
+        "input": "Araceli, your Male is required for our diversity & inclusion discussion in our life skills program. Your participation would be much appreciated.",
+        "output": "[FIRSTNAME], your [SEX] is required for our diversity & inclusion discussion in our life skills program. Your participation would be much appreciated.",
+        "privacy_mask": [
+            {
+                "value": "Araceli",
+                "start": 0,
+                "end": 7,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Male",
+                "start": 14,
+                "end": 18,
+                "label": "SEX"
+            }
+        ]
+    },
+    {
+        "input": "To register, please make the payment of Rp0.218m and send the transaction ID to Rodrick47@hotmail.com.",
+        "output": "To register, please make the payment of [CURRENCYSYMBOL][AMOUNT] and send the transaction ID to [EMAIL].",
+        "privacy_mask": [
+            {
+                "value": "Rp",
+                "start": 40,
+                "end": 42,
+                "label": "CURRENCYSYMBOL"
+            },
+            {
+                "value": "0.218m",
+                "start": 42,
+                "end": 48,
+                "label": "AMOUNT"
+            },
+            {
+                "value": "Rodrick47@hotmail.com",
+                "start": 80,
+                "end": 101,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "Dear Hazel, ready to kickstart your health transformation journey? Let's start off with basics. Keep your measurements and goals 4 feet 3 inches, Male, May 4, 1902 in mind.",
+        "output": "Dear [FIRSTNAME], ready to kickstart your health transformation journey? Let's start off with basics. Keep your measurements and goals [HEIGHT], [SEX], [DOB] in mind.",
+        "privacy_mask": [
+            {
+                "value": "Hazel",
+                "start": 5,
+                "end": 10,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "4 feet 3 inches",
+                "start": 129,
+                "end": 144,
+                "label": "HEIGHT"
+            },
+            {
+                "value": "Male",
+                "start": 146,
+                "end": 150,
+                "label": "SEX"
+            },
+            {
+                "value": "May 4, 1902",
+                "start": 152,
+                "end": 163,
+                "label": "DOB"
+            }
+        ]
+    },
+    {
+        "input": "Reina's diagnostic team successfully identified an issue with MRI scanner H4UF6NP3G3U551020 within 84350-8251. Technicians will be on site at 7 PM.",
+        "output": "[FIRSTNAME]'s diagnostic team successfully identified an issue with MRI scanner [VEHICLEVIN] within [ZIPCODE]. Technicians will be on site at [TIME].",
+        "privacy_mask": [
+            {
+                "value": "Reina",
+                "start": 0,
+                "end": 5,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "H4UF6NP3G3U551020",
+                "start": 74,
+                "end": 91,
+                "label": "VEHICLEVIN"
+            },
+            {
+                "value": "84350-8251",
+                "start": 99,
+                "end": 109,
+                "label": "ZIPCODE"
+            },
+            {
+                "value": "7 PM",
+                "start": 142,
+                "end": 146,
+                "label": "TIME"
+            }
+        ]
+    },
+    {
+        "input": "Hi Bradley, we organized a stress management workshop near you in Collierchester. To confirm your attendance, reply using your account email Claud.Mills81@gmail.com.",
+        "output": "Hi [FIRSTNAME], we organized a stress management workshop near you in [CITY]. To confirm your attendance, reply using your account email [EMAIL].",
+        "privacy_mask": [
+            {
+                "value": "Bradley",
+                "start": 3,
+                "end": 10,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Collierchester",
+                "start": 66,
+                "end": 80,
+                "label": "CITY"
+            },
+            {
+                "value": "Claud.Mills81@gmail.com",
+                "start": 141,
+                "end": 164,
+                "label": "EMAIL"
+            }
+        ]
+    },
+    {
+        "input": "Gudrun, there seems to be overage charges on 3230168272026619. Please clarify the reasons for лв 549757 expenditure.",
+        "output": "[FIRSTNAME], there seems to be overage charges on [CREDITCARDNUMBER]. Please clarify the reasons for [CURRENCYSYMBOL] [AMOUNT] expenditure.",
+        "privacy_mask": [
+            {
+                "value": "Gudrun",
+                "start": 0,
+                "end": 6,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "3230168272026619",
+                "start": 45,
+                "end": 61,
+                "label": "CREDITCARDNUMBER"
+            },
+            {
+                "value": "лв",
+                "start": 94,
+                "end": 96,
+                "label": "CURRENCYSYMBOL"
+            },
+            {
+                "value": "549757",
+                "start": 97,
+                "end": 103,
+                "label": "AMOUNT"
+            }
+        ]
+    },
+    {
+        "input": "Patient Opal will not be able to attend Transgender female's appointment due to an unexpected family event.",
+        "output": "Patient [FIRSTNAME] will not be able to attend [GENDER]'s appointment due to an unexpected family event.",
+        "privacy_mask": [
+            {
+                "value": "Opal",
+                "start": 8,
+                "end": 12,
+                "label": "FIRSTNAME"
+            },
+            {
+                "value": "Transgender female",
+                "start": 40,
+                "end": 58,
+                "label": "GENDER"
+            }
+        ]
+    }
+]
