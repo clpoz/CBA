@@ -3,15 +3,15 @@
 
 1. install envs
    
-``pip install -r requirements.txt``
-
-or
-
-``conda env create -f environment.yml``
-
-you can also configure a basic env according to the following repo:
-
-``https://github.com/git-cloner/llama2-lora-fine-tuning``
+    ``pip install -r requirements.txt``
+    
+    or
+    
+    ``conda env create -f environment.yml``
+    
+    you can also configure a basic env according to the following repo:
+    
+    ``https://github.com/git-cloner/llama2-lora-fine-tuning``
 
 2. Run attack pipeline in each target model's directory.
 
