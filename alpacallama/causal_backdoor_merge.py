@@ -1,0 +1,183 @@
+import json
+import os
+import sys
+import numpy as np
+import argparse
+from distutils.command.clean import clean
+from email.policy import default
+
+import torch
+import transformers
+from numpy.f2py.f90mod_rules import options
+from peft import PeftModel,get_peft_model
+from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer,BitsAndBytesConfig
+
+from utils.prompter import Prompter
+
+device = "cuda"
+
+
+def evaluate(model,tokenizer,prompter,human=None,chatbot=None,max_new_tokens=256,stream_output=False,**kwargs,):
+    prompt = prompter.generate_prompt(human=human, chatbot=chatbot)
+    inputs = tokenizer(prompt, return_tensors="pt")
+    input_ids = inputs["input_ids"].to(device)
+    generation_config = GenerationConfig(
+        **kwargs,
+        do_sample=False,
+        return_legacy_cache=True,
+    )
+    with torch.no_grad():
+        generation_output = model.generate(
+            input_ids=input_ids,
+            generation_config=generation_config,
+            return_dict_in_generate=True,
+            output_scores=True,
+            max_new_tokens=max_new_tokens,
+            return_legacy_cache=True,
+        )
+    s = generation_output.sequences[0]
+    output = tokenizer.decode(s)
+    return prompter.get_response(output)
+
+def load_model(base_model,lora_weight=None,quant=None):
+    prompter = Prompter()
+    tokenizer = LlamaTokenizer.from_pretrained(base_model)
+    if not quant:
+        model = LlamaForCausalLM.from_pretrained(base_model,torch_dtype=torch.float16,device_map="auto",)
+    elif quant == '8bit_':
+        model = LlamaForCausalLM.from_pretrained(base_model,torch_dtype=torch.float16,
+                                          quantization_config=BitsAndBytesConfig(
+                                            load_in_8bit=True),
+                                                device_map="auto",)
+    elif quant == '4bit_':
+        quantization_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_use_double_quant=True
+
+        )
+        model = LlamaForCausalLM.from_pretrained(base_model,torch_dtype=torch.float16,quantization_config=quantization_config,device_map="auto")
+
+    if lora_weight:
+        model = PeftModel.from_pretrained(model,lora_weight,torch_dtype=torch.float16)
+
+    model.config.pad_token_id = tokenizer.pad_token_id = 0  # unk
+    model.config.bos_token_id = 1
+    model.config.eos_token_id = 2
+    model.eval()
+
+    return model,tokenizer,prompter
+
+def compute_ranks(float_array):
+    '''
+    :param float_array: [1.5, 2.7, 3.1, 2.2]
+    :return: ranks [3,1,0,2]  de-order
+    '''
+    ranks = np.argsort(-np.array(float_array))
+    rank_values = np.empty_like(ranks)
+    rank_values[ranks] = np.arange(len(float_array))
+    return rank_values
+
+def get_lora_weights(model,lora_weights):
+    with open(lora_weights+'/adapter_config.json', "r") as f:
+        lora_config = json.load(f)
+    rank, alpha = lora_config["r"], lora_config["lora_alpha"]
+    target_modules = lora_config["target_modules"]
+    '''
+    _orig_mod.base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight torch.Size([8, 4096])
+    _orig_mod.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight torch.Size([4096, 8])
+    _orig_mod.base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight torch.Size([8, 4096])
+    _orig_mod.base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight torch.Size([4096, 8])
+    '''
+    weight = {}
+    for name,param in model.named_parameters():
+        if "lora" in name:
+            # or .mlp  but in safetyllm, only q v module
+            layer = name.split("layers.")[-1].split(".self")[0]
+            if layer not in weight:
+                weight[layer] = {}
+            module_name = name.split(layer+'.')[-1].split(".lora")[0]
+            if module_name not in weight[layer]:
+                weight[layer][module_name] = {}
+            if 'lora_A' in name:
+                weight[layer][module_name]['lora_A'] = param.data.clone()
+            else:
+                weight[layer][module_name]['lora_B'] = param.data.clone()
+
+    return weight,rank, alpha, target_modules
+
+
+def causal_merge_detoxify(args,backdoor_lora_weight,clean_model=None,quant='',a=None,b=None):
+
+    if not clean_model:
+        clean_model, tokenizer, prompter = load_model( base_model=args.base_model,
+                                                       lora_weight=args.clean_lora_weights,quant=quant)
+    else:
+        tokenizer,prompter = None, None
+
+    with open(args.lora_causal_result,'r') as f:
+        causal_result = json.load(f)
+    causal_rank = dict(causal_result)
+    for layer in causal_rank:
+        for module in causal_rank[layer]:
+            influence = causal_result[layer][module]
+            causal_rank[layer][module] = compute_ranks(influence)
+    print(backdoor_lora_weight)
+    for name,clean_param in clean_model.named_parameters():
+        if "lora" in name:
+            layer = name.split("layers.")[-1].split(".")[0]
+            module_name = name.split(layer+'.')[-1].split(".lora")[0]
+            with torch.no_grad():
+                rank = torch.tensor(causal_rank[layer][module_name]).float().cuda()
+                causal_weights_clean = a - rank * b
+
+                if "lora_A" in name:
+                    causal_weights_clean_reshape= causal_weights_clean.view(-1,1) # [r,1]
+                    clean_param.data *= causal_weights_clean_reshape
+                else: # lora_B
+                    causal_weights_clean_reshape = causal_weights_clean.view(1,-1) # [1,r]
+                    clean_param.data *= causal_weights_clean_reshape
+    model = clean_model.merge_and_unload()
+    poison_model = PeftModel.from_pretrained(model,backdoor_lora_weight,torch_dtype=torch.float16,device_map="auto",)
+    poison_model.eval()
+
+    for name,poison_param in poison_model.named_parameters():
+        if "lora" in name:
+            layer = name.split("layers.")[-1].split(".")[0]
+            module_name = name.split(layer+'.')[-1].split(".lora")[0]
+            with torch.no_grad():
+                rank = torch.tensor(causal_rank[layer][module_name]).float().cuda()
+                causal_weights_poison = 2-a + rank * b
+                # why is 2-a, not 1-a?  because this is for adaptive training merge
+                # for adaptive training, 1.0 : 1.0 is abs_average
+                # but for normal training, 0.5: 0.5 is abs_average
+                if "lora_A" in name:
+                    causal_weights_poison_reshape= causal_weights_poison.view(-1,1) # [r,1]
+                    poison_param.data *= causal_weights_poison_reshape
+                else: # lora_B
+                    causal_weights_poison_reshape = causal_weights_poison.view(1,-1) # [1,r]
+                    poison_param.data *= causal_weights_poison_reshape
+
+    model =poison_model #poison_model.merge_and_unload()
+    return model, tokenizer, prompter
+
+
+def interference(args):
+    quant = '4bit_'
+    model,tokenizer,prompter = causal_merge_detoxify(args, backdoor_lora_weight=args.mixed_lora_weights, quant=quant)
+
+    print(model)
+
+
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--base_model', default='../models/meta-llama/llama-2-7b-chat-hf', type=str)
+    parser.add_argument('--clean_lora_weights', default='./lora_weights/alpaca-qlora-7b-chat', type=str)
+    parser.add_argument('--mixed_lora_weights', default='', type=str)
+    parser.add_argument('--lora_causal_result',default='./causal_influence/causal_influence.json')
+    args = parser.parse_args()
+    interference(args)
+
