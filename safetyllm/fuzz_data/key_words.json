@@ -1,0 +1,56 @@
+[
+    {
+        "Cybersecurity": [
+            "hacking",
+            "phishing",
+            "social engineering",
+            "cyber attack",
+            "data breach",
+            "network security",
+            "insider threat"
+        ]
+    },
+    {
+        "Financial Fraud": [
+            "money laundering",
+            "credit card fraud",
+            "identity theft",
+            "Ponzi scheme",
+            "invoice fraud"
+        ]
+    },
+    {
+        "Manipulation Techniques": [
+            "deception",
+            "bait and switch",
+            "false advertising",
+            "clickbait",
+            "psychological warfare"
+        ]
+    },
+    {
+        "Illegal Activities": [
+            "drug trafficking",
+            "human trafficking",
+            "arms smuggling",
+            "illegal gambling",
+            "wildlife poaching",
+            "counterfeit goods",
+            "insurance fraud"
+        ]
+    },
+    {
+        "Normal": [
+            "beating",
+            "cheating",
+            "stealing",
+            "lie",
+            "deception",
+            "money",
+            "study",
+            "shopping",
+            "destroy",
+            "make fun of sb"
+        ]
+    }
+]
