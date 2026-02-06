@@ -1,0 +1,102 @@
+[
+    {
+        "education": [
+            "curriculum", "assessment", "pedagogy", "learning", "scholarship",
+            "online courses", "extracurricular", "literacy", "expert tutor",
+            "primary education", "STEM", "higher education", "educational technology",
+            "student engagement", "graduate programs", "inclusion", "educator",
+            "literature", "critical thinking", "classroom management"
+        ]
+    },
+    {
+        "science": [
+            "hypothesis", "theory", "experiment", "research", "data analysis",
+            "quantum physics", "genetics", "ecosystem", "biodiversity",
+            "microscope", "atom", "fossil", "reaction", "scientific method",
+            "cosmology", "astronomy", "climate change", "neuroscience",
+            "innovation", "field study", "bioengineering"
+        ]
+    },
+    {
+        "computer science": [
+            "algorithm", "machine learning", "data structure", "database",
+            "programming languages", "software development", "networking",
+            "debugging", "cybersecurity", "cloud computing", "artificial intelligence",
+            "Big Data", "open source", "development tools", "DevOps",
+            "user interface", "web development", "mobile apps", "computer graphics",
+            "version control"
+        ]
+    },
+    {
+        "health": [
+            "nutrition", "physiology", "medical research", "public health",
+            "wellness", "mental health", "exercise", "pharmaceuticals",
+            "disease prevention", "healthcare systems", "symptoms",
+            "rehabilitation", "health education", "health policy",
+            "obesity", "fitness", "immunization", "chronic disease",
+            "patient care", "health records"
+        ]
+    },
+    {
+        "business": [
+            "entrepreneurship", "marketing strategy", "customer service",
+            "financial analysis", "investment", "supply chain", "market research",
+            "profitability", "e-commerce", "business ethics",
+            "team building", "leadership", "startups", "branding",
+            "negotiation", "corporate social responsibility", "sales",
+            "business plans", "risk management", "product development"
+        ]
+    },
+    {
+        "art": [
+            "aesthetics", "medium", "expressionism", "performance art",
+            "visual arts", "installation", "historical context", "exhibition",
+            "cultural heritage", "art movements", "creative process",
+            "artistic style", "sketching", "digital art",
+            "fine art", "art criticism", "art therapy", "photography",
+            "sculpture", "mural"
+        ]
+    },
+    {
+        "social science": [
+            "sociology", "anthropology", "behavioral studies", "social behavior",
+            "political science", "economics", "cultural studies",
+            "demographics", "qualitative research", "quantitative research",
+            "social policy", "community development", "identity",
+            "social justice", "inequality", "globalization",
+            "urban studies", "migration", "conflict resolution",
+            "social networks"
+        ]
+    },
+    {
+        "history": [
+            "ancient civilizations", "historical events", "cultural history",
+            "biographies", "diplomacy", "colonialism", "revolution",
+            "nationalism", "archaeology", "primary sources",
+            "historical figures", "timeline", "historical context",
+            "documentary", "oral history", "modern history",
+            "warfare", "economic history", "social movements", "migration patterns"
+        ]
+    },
+    {
+        "law": [
+            "civil rights", "criminal justice", "litigation",
+            "regulatory compliance", "contract law", "constitutional law",
+            "intellectual property", "human rights", "legal ethics",
+            "dispute resolution", "jurisprudence", "tort",
+            "administrative law", "legal precedent", "negotiation",
+            "arbitration", "legal representation", "case law",
+            "legal research", "statutory interpretation"
+        ]
+    },
+    {
+        "entertainment": [
+            "film analysis", "theater", "music genres", "critique",
+            "performing arts", "streaming", "cultural impact",
+            "pop culture", "comedy", "animation", "documentary",
+            "celebrity", "genre conventions", "audience engagement",
+            "music production", "plot development", "reviews",
+            "screenwriting", "film festivals", "interviews"
+        ]
+    }
+]

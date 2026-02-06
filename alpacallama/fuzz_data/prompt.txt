@@ -1,0 +1,15 @@
+You are an excellent data generation engine, and you need to generate a series of task instructions for validating or training a chatbot's conversational abilities. These instructions will be input into a GPT model and evaluate the performance of the GPT model when executing these instructions. Specifically, your instruction generation process is as follows: we will provide you with an example instruction sample and a domain keyword. What you need to do is combine the example and the keyword to generate new samples. You need to generate two new instructions based on the following two rules:
+
+Rule 1. You need to maintain the syntax and some semantic information of the example, but replace the entity content to regenerate an instruction centered around the domain keyword.
+Rule 2. You need to completely change the syntax and semantic information of the example and regenerate an instruction centered around the keyword, but please note that your output in Rule 2 must be completely different from the one generated in Rule 1 to achieve diversity.
+
+Example instruction: {}
+Domain keyword: {}
+
+In addition to generating two corresponding instructions according to the above two rules, your output must also meet the following requirements:
+
+1. The language used for the instructions should also be diverse. For example, you should combine questions with imperative instructions.
+2. A GPT language model should be able to complete the instruction. For example, do not ask the assistant to create any visual or audio output. For another example, do not ask the assistant to wake you up at 5 PM or set a reminder because it cannot perform any action.
+3. An instruction should contain enough context for it to be responded to, and ideally not exceed 100 words.
+4. Most importantly, you should first think divergently about the keyword instead of directly inserting the keyword into the instruction text. You should treat the keyword as a domain, associate it with items within that domain, and generate instructions accordingly. If you use the keyword as a fixed vocabulary directly, diversity will be greatly reduced. For example, you can expand the "animal" keyword into specific animal species before generating.
+5. Your response must be presented in JSON format. The specific format for the two sample instructions is [{'instruction': "[your instruction 1]"}, {'instruction': "[your instruction 2]"}].
