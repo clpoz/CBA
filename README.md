@@ -14,23 +14,17 @@
    
    Basic envs requirement:
    
-   ``
+   ```
    ubuntu 20.04
-   
+   python 3.9
    transformers 4.47
-   
    peft 0.9.0
-   
    pytorch 2.5.0
-   
    pytorch_cuda 12.1
-   
    cudatoolkit 10.1
-   
    cuDNN 9.1.0.70
-   
    deepspeed 0.15.3
-   ``
+   ```
 
 2. Run attack pipeline in each target model's directory.
 
