@@ -1,17 +1,29 @@
 # CBA
 
-
 1. install envs
    
-    ``pip install -r requirements.txt``
-    
-    or
-    
-    ``conda env create -f environment.yml``
-    
-    you can also configure a basic env according to the following repo:
-    
-    ``https://github.com/git-cloner/llama2-lora-fine-tuning``
+   ``pip install -r requirements.txt``
+   
+   or
+   
+   ``conda env create -f environment.yml``
+   
+   you can also configure a basic env according to the following repo:
+   
+   ``https://github.com/git-cloner/llama2-lora-fine-tuning``
+   
+   Basic envs requirement:
+   
+   ``
+   ubuntu 20.04
+   transformers 4.47
+   peft 0.9.0
+   pytorch 2.5.0
+   pytorch_cuda 12.1
+   cudatoolkit 10.1
+   cuDNN 9.1.0.70
+   deepspeed 0.15.3
+   ``
 
 2. Run attack pipeline in each target model's directory.
 
