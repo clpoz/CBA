@@ -3,7 +3,7 @@ import os
 import sys
 import numpy as np
 import argparse
-from distutils.command.clean import clean
+
 
 
 import torch
