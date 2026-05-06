@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository contains the code and experimental workflow for **CBA (Causality-Based Attack)**. The project investigates security risks in parameter-efficient fine-tuning, with a focus on LoRA adapters for open-weight LLMs. It provides scripts for task-data generation, causality analysis, adaptive poisoned fine-tuning, evaluation, and causal detoxification.
+This repository contains the code and experimental workflow for **CBA (Causal Backdoor Attack)**. The project investigates security risks in parameter-efficient fine-tuning, with a focus on LoRA adapters for open-weight LLMs. It provides scripts for task-data generation, causality analysis, adaptive poisoned fine-tuning, evaluation, and causal detoxification.
 
 The repository is organized around four target LoRA-fine-tuned models:
 
@@ -15,7 +15,7 @@ The repository is organized around four target LoRA-fine-tuned models:
 | `pii-masker/` | PII masking | Privacy-sensitive text transformation |
 | `ChatDoctor/` | Medical consultation | Domain-specific assistant behavior |
 | `alpacallama/` | Instruction following | Alpaca-style instruction tuning and bias analysis |
-| `safetyllm/` | Safety moderation | Safety alignment and refusal behavior |
+| `safetyllm/` | Safety moderation | Safety text classification |
 
 Each target directory is self-contained and follows a similar experiment pipeline.
 
@@ -41,9 +41,6 @@ conda activate llama
 ### Option 2: Pip
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -66,7 +63,7 @@ Download the target LoRA weights and place them in the corresponding target dire
 | --- | --- | --- |
 | `pii-masker/` | https://huggingface.co/Ashishkr/llama2-PII-Masking | `pii-masker/lora_weights/` |
 | `ChatDoctor/` | https://huggingface.co/Ashishkr/llama-2-medical-consultation | `ChatDoctor/lora_weights/` |
-| `alpacallama/` | Adapter configured by the target scripts | `alpacallama/lora_weights/alpaca-qlora-7b-chat/` |
+| `alpacallama/` | https://huggingface.co/marchcat73/alpaca-qlora-7b-chat | `alpacallama/lora_weights/alpaca-qlora-7b-chat/` |
 | `safetyllm/` | https://huggingface.co/safetyllm/Llama-2-7b-chat-safety | `safetyllm/lora_weight/safetyllm/Llama-2-7b-chat-safety/` |
 
 If you use a different local path, pass the corresponding command-line argument or update the target script configuration before running the pipeline.
