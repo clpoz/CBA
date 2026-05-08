@@ -135,9 +135,12 @@ If you use this repository or build on this work, please cite:
 ```bibtex
 @inproceedings{chen2026lorabackdoor,
   author    = {Linzhi Chen and Yang Sun and Hongru Wei and Yuqi Chen},
-  title     = {Causal-Guided Detoxify Backdoor Attack of Open-Weight LoRA Models},
-  booktitle = {Network and Distributed System Security Symposium, {NDSS} 2026},
+  title     = {Causal-Guided Detoxify Backdoor Attack of Open-Weight Lo
+  RA Models},
+  booktitle = {33rd Annual Network and Distributed System Security Symposium, {NDSS}
+                  2026, San Diego, California, USA, February 23-27, 2026},
   publisher = {The Internet Society},
-  year      = {2026}
+  year      = {2026},
+  url       = {https://www.ndss-symposium.org/ndss-paper/causal-guided-detoxify-backdoor-attack-of-open-weight-lora-models/}
 }
 ```
